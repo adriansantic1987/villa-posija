@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-translate="page_title">Villa Posija | Luxury Stone Villa in Baška, Krk Island</title>
+
+  <!-- Theme Flashing Prevention -->
+  <script>
+    (function() {
+      const getCookie = (name) => {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop().split(';').shift();
+      };
+      const theme = getCookie('theme') || 'dark';
+      if (theme === 'light') {
+        document.documentElement.classList.add('light-theme');
+      }
+    })();
+  </script>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Experience absolute luxury at Villa Posija, an authentic premium stone villa in Baška, Krk Island, Croatia. Featuring stunning sea views, a heated infinity pool, and high-end Mediterranean surroundings.">
+  <meta name="keywords"
+    content="Villa Posija, luxury villa Krk, vacation rental Croatia, Baška villa, heated infinity pool, authentic stone villa">
+  <meta name="author" content="Villa Posija">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Villa Posija | Luxury Stone Villa in Baška, Krk Island">
+  <meta property="og:description"
+    content="Indulge in an exclusive retreat at Villa Posija, featuring premium stone architecture, Mediterranean gardens, and an infinity pool in Baška, Croatia.">
+  <meta property="og:image" content="./images/hero_villa.png">
+
+  <!-- FontAwesome v6 CDN for Modern Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+       STICKY NAVBAR
+       ========================================================================== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#hero" class="logo">
+        VILLA <span class="logo-gold">POSIJA</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link" data-translate="nav_about">About</a></li>
+        <li><a href="#amenities" class="nav-link" data-translate="nav_amenities">Amenities</a></li>
+        <li><a href="#gallery" class="nav-link" data-translate="nav_gallery">Gallery</a></li>
+        <li><a href="#contact" class="nav-link" data-translate="nav_contact">Contact</a></li>
+      </ul>
+
+      <div class="navbar-controls">
+        <!-- Language Dropdown Switcher -->
+        <div class="lang-switcher">
+          <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false">
+            <i class="fa-solid fa-globe"></i> <span id="currentLang">EN</span> <i class="fa-solid fa-chevron-down" style="font-size: 0.6rem; margin-left: 2px;"></i>
+          </button>
+          <ul class="lang-dropdown" id="langDropdown">
+            <li><a href="#" data-lang="en">EN</a></li>
+            <li><a href="#" data-lang="hr">HR</a></li>
+            <li><a href="#" data-lang="de">DE</a></li>
+            <li><a href="#" data-lang="it">IT</a></li>
+          </ul>
+        </div>
+
+        <!-- Theme Toggle -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon dark-icon"></i>
+          <i class="fa-solid fa-sun light-icon"></i>
+        </button>
+      </div>
+
+      <div class="navbar-cta">
+        <a href="#contact" class="btn btn-gold-outline" style="padding: 0.6rem 1.5rem; font-size: 0.75rem;" data-translate="nav_book_now">Book Now</a>
+      </div>
+
+      <div class="burger-menu" id="burgerMenu">
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <header class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-subtitle" data-translate="hero_subtitle">Premium Adriatic Escape</span>
+      <h1 class="hero-title" data-translate="hero_title">Where Luxury Meets The Horizon</h1>
+      <p class="hero-text" data-translate="hero_text">
+        An exquisite private retreat nestled in Baška on the Island of Krk, Croatia. Blending authentic premium stone
+        architecture with modern sophistication, Villa Posija offers panoramic Adriatic Sea views, a heated infinity
+        pool, and pristine Mediterranean surroundings.
+      </p>
+      <div class="hero-ctas">
+        <a href="#about" class="btn btn-primary" data-translate="hero_cta_explore">Explore Villa</a>
+        <a href="#contact" class="btn btn-outline" data-translate="hero_cta_availability">View Availability</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       ABOUT SECTION
+       ========================================================================== -->
+  <section class="section container" id="about">
+    <div class="about-grid">
+      <div class="about-text-content reveal reveal-left">
+        <span class="section-subtitle" data-translate="about_subtitle">The Retreat</span>
+        <h2 class="about-heading" data-translate="about_heading">Authentic Croatian Stone Architecture & Contemporary Comfort</h2>
+        <p class="about-description" data-translate="about_desc">
+          Located in the breathtaking coastal town of Baška on Krk Island, Villa Posija represents a masterclass in
+          regional heritage design. Crafted using local hand-carved stone, the villa integrates seamlessly with the
+          surrounding silver olive groves, wild rosemary bushes, and rocky Mediterranean hills, offering absolute
+          seclusion and a connection to the Adriatic coast.
+        </p>
+
+        <div class="about-features">
+          <div class="about-feature-item">
+            <div class="about-feature-icon">
+              <i class="fa-solid fa-gem"></i>
+            </div>
+            <div>
+              <h4 class="about-feature-title" data-translate="about_f1_title">Authentic Stone Masonry</h4>
+              <p class="about-feature-desc" data-translate="about_f1_desc">Traditional thick stone wall architecture ensuring natural insulation and
+                rustic coastal elegance.</p>
+            </div>
+          </div>
+
+          <div class="about-feature-item">
+            <div class="about-feature-icon">
+              <i class="fa-solid fa-water"></i>
+            </div>
+            <div>
+              <h4 class="about-feature-title" data-translate="about_f2_title">Heated Infinity Pool</h4>
+              <p class="about-feature-desc" data-translate="about_f2_desc">Hovering over the coastline with integrated warm water climate regulation
+                for year-round swims.</p>
+            </div>
+          </div>
+
+          <div class="about-feature-item">
+            <div class="about-feature-icon">
+              <i class="fa-solid fa-compass"></i>
+            </div>
+            <div>
+              <h4 class="about-feature-title" data-translate="about_f3_title">Unrivaled Sea Views</h4>
+              <p class="about-feature-desc" data-translate="about_f3_desc">Stunning vistas of the clear blue waters of the Adriatic and the nearby
+                islands.</p>
+            </div>
+          </div>
+
+          <div class="about-feature-item">
+            <div class="about-feature-icon">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+            <div>
+              <h4 class="about-feature-title" data-translate="about_f4_title">Mediterranean Flora</h4>
+              <p class="about-feature-desc" data-translate="about_f4_desc">Landscaped private estate featuring aromatic gardens with lavender, figs,
+                and olive trees.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <a href="#contact" class="btn btn-gold-outline" data-translate="about_cta">Contact Guest Services</a>
+        </div>
+      </div>
+
+      <div class="about-images-wrapper reveal reveal-right">
+        <div class="about-img-backdrop"></div>
+        <img src="./images/interior_living.png" alt="Villa Posija Living Area" class="about-img-main">
+        <img src="./images/interior_bedroom.png" alt="Villa Posija Premium Room" class="about-img-sub">
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PREMIUM AMENITIES SECTION
+       ========================================================================== -->
+  <section class="section amenities" id="amenities">
+    <div class="container">
+      <div class="section-header reveal reveal-up">
+        <span class="section-subtitle" data-translate="amenities_subtitle">World-Class Services</span>
+        <h2 class="section-title" data-translate="amenities_title">Curated For Complete Comfort</h2>
+      </div>
+
+      <div class="amenities-grid">
+        <!-- Amenity 1 -->
+        <div class="amenity-card reveal reveal-up delay-100">
+          <div class="amenity-icon">
+            <i class="fa-solid fa-water"></i>
+          </div>
+          <h3 class="amenity-title" data-translate="amenity_1_title">Heated Infinity Pool</h3>
+          <p class="amenity-desc" data-translate="amenity_1_desc">Custom-heated pool overlooking the Adriatic Sea, equipped with hydro-massage jets and a
+            spacious deck.</p>
+        </div>
+
+        <!-- Amenity 2 -->
+        <div class="amenity-card reveal reveal-up delay-200">
+          <div class="amenity-icon">
+            <i class="fa-solid fa-wifi"></i>
+          </div>
+          <h3 class="amenity-title" data-translate="amenity_2_title">High-Speed Wi-Fi</h3>
+          <p class="amenity-desc" data-translate="amenity_2_desc">Full mesh gigabit Wi-Fi covers the entire villa, terraces, pool deck, and gardens with
+            zero deadzones.</p>
+        </div>
+
+        <!-- Amenity 3 -->
+        <div class="amenity-card reveal reveal-up delay-300">
+          <div class="amenity-icon">
+            <i class="fa-solid fa-snowflake"></i>
+          </div>
+          <h3 class="amenity-title" data-translate="amenity_3_title">AC / Climate Control</h3>
+          <p class="amenity-desc" data-translate="amenity_3_desc">Silent, fully integrated modern air conditioning throughout all suites and living
+            spaces.</p>
+        </div>
+
+        <!-- Amenity 4 -->
+        <div class="amenity-card reveal reveal-up delay-100">
+          <div class="amenity-icon">
+            <i class="fa-solid fa-car"></i>
+          </div>
+          <h3 class="amenity-title" data-translate="amenity_4_title">Private Secure Parking</h3>
+          <p class="amenity-desc" data-translate="amenity_4_desc">Secure private parking on-site behind electric wrought iron gates with active video
+            surveillance.</p>
+        </div>
+
+        <!-- Amenity 5 -->
+        <div class="amenity-card reveal reveal-up delay-200">
+          <div class="amenity-icon">
+            <i class="fa-solid fa-fire-burner"></i>
+          </div>
+          <h3 class="amenity-title" data-translate="amenity_5_title">BBQ & Dining Terrace</h3>
+          <p class="amenity-desc" data-translate="amenity_5_desc">Authentic outdoor stone fireplace, built-in kitchen, and spacious dining pergola for
+            alfresco meals.</p>
+        </div>
+
+        <!-- Amenity 6 -->
+        <div class="amenity-card reveal reveal-up delay-300">
+          <div class="amenity-icon">
+            <i class="fa-solid fa-spa"></i>
+          </div>
+          <h3 class="amenity-title" data-translate="amenity_6_title">Wellness & Sauna</h3>
+          <p class="amenity-desc" data-translate="amenity_6_desc">Premium private wellness space with Finnish sauna, steam shower room, and dedicated
+            massage treatment corner.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       INTERACTIVE GALLERY SECTION
+       ========================================================================== -->
+  <section class="section container" id="gallery">
+    <div class="section-header reveal reveal-up">
+      <span class="section-subtitle" data-translate="gallery_subtitle">Visual Splendor</span>
+      <h2 class="section-title" data-translate="gallery_title">Experience Villa Posija</h2>
+    </div>
+
+    <div class="gallery-filters reveal reveal-up">
+      <span class="filter-btn active" data-filter="all" data-translate="gallery_filter_all">All Photos</span>
+      <span class="filter-btn" data-filter="interior" data-translate="gallery_filter_interior">Interior</span>
+      <span class="filter-btn" data-filter="exterior" data-translate="gallery_filter_exterior">Exterior</span>
+      <span class="filter-btn" data-filter="pool" data-translate="gallery_filter_pool">Pool / Spa</span>
+    </div>
+
+    <div class="gallery-grid reveal reveal-scale" id="galleryGrid">
+      <!-- Item 1 -->
+      <div class="gallery-item visible" data-category="exterior">
+        <img src="./images/hero_villa.png" alt="Villa Posija Exterior Sunset" class="gallery-img">
+        <div class="gallery-overlay">
+          <div class="gallery-info">
+            <span class="gallery-category" data-translate="gallery_cat_exterior">Exterior</span>
+            <h3 class="gallery-title" data-translate="gallery_t1">Villa Facade at Sunset</h3>
+          </div>
+          <div class="gallery-icon-view" style="align-self: flex-end; margin-top: auto;">
+            <i class="fa-solid fa-expand"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="gallery-item visible" data-category="interior">
+        <img src="./images/interior_living.png" alt="Villa Posija Living Area" class="gallery-img">
+        <div class="gallery-overlay">
+          <div class="gallery-info">
+            <span class="gallery-category" data-translate="gallery_cat_interior">Interior</span>
+            <h3 class="gallery-title" data-translate="gallery_t2">Grand Living Room</h3>
+          </div>
+          <div class="gallery-icon-view" style="align-self: flex-end; margin-top: auto;">
+            <i class="fa-solid fa-expand"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="gallery-item visible" data-category="pool">
+        <img src="./images/exterior_pool.png" alt="Villa Posija Infinity Pool" class="gallery-img">
+        <div class="gallery-overlay">
+          <div class="gallery-info">
+            <span class="gallery-category" data-translate="gallery_cat_pool">Pool / Spa</span>
+            <h3 class="gallery-title" data-translate="gallery_t3">Cliffside Infinity Pool</h3>
+          </div>
+          <div class="gallery-icon-view" style="align-self: flex-end; margin-top: auto;">
+            <i class="fa-solid fa-expand"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="gallery-item visible" data-category="interior">
+        <img src="./images/interior_bedroom.png" alt="Villa Posija Master Bedroom" class="gallery-img">
+        <div class="gallery-overlay">
+          <div class="gallery-info">
+            <span class="gallery-category" data-translate="gallery_cat_interior">Interior</span>
+            <h3 class="gallery-title" data-translate="gallery_t4">Master Suite Sanctuary</h3>
+          </div>
+          <div class="gallery-icon-view" style="align-self: flex-end; margin-top: auto;">
+            <i class="fa-solid fa-expand"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="gallery-item visible" data-category="exterior">
+        <img src="./images/exterior_dining.png" alt="Villa Posija Outdoor Patio" class="gallery-img">
+        <div class="gallery-overlay">
+          <div class="gallery-info">
+            <span class="gallery-category" data-translate="gallery_cat_exterior">Exterior</span>
+            <h3 class="gallery-title" data-translate="gallery_t5">Alfresco Dining Terrace</h3>
+          </div>
+          <div class="gallery-icon-view" style="align-self: flex-end; margin-top: auto;">
+            <i class="fa-solid fa-expand"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 6 -->
+      <div class="gallery-item visible" data-category="pool">
+        <img src="./images/wellness_sauna.png" alt="Villa Posija Spa Sauna Room" class="gallery-img">
+        <div class="gallery-overlay">
+          <div class="gallery-info">
+            <span class="gallery-category" data-translate="gallery_cat_pool">Pool / Spa</span>
+            <h3 class="gallery-title" data-translate="gallery_t6">Private Wellness Sauna</h3>
+          </div>
+          <div class="gallery-icon-view" style="align-self: flex-end; margin-top: auto;">
+            <i class="fa-solid fa-expand"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 7 -->
+      <div class="gallery-item visible" data-category="interior">
+        <img src="./images/interior_living.png" alt="Villa Posija Living Area" class="gallery-img">
+        <div class="gallery-overlay">
+          <div class="gallery-info">
+            <span class="gallery-category" data-translate="gallery_cat_interior">Interior</span>
+            <h3 class="gallery-title" data-translate="gallery_t7">Cozy Stone Fireplace</h3>
+          </div>
+          <div class="gallery-icon-view" style="align-self: flex-end; margin-top: auto;">
+            <i class="fa-solid fa-expand"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 8 -->
+      <div class="gallery-item visible" data-category="pool">
+        <img src="./images/exterior_pool.png" alt="Villa Posija Infinity Pool" class="gallery-img">
+        <div class="gallery-overlay">
+          <div class="gallery-info">
+            <span class="gallery-category" data-translate="gallery_cat_pool">Pool / Spa</span>
+            <h3 class="gallery-title" data-translate="gallery_t8">Infinity Pool at Night</h3>
+          </div>
+          <div class="gallery-icon-view" style="align-self: flex-end; margin-top: auto;">
+            <i class="fa-solid fa-expand"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 9 -->
+      <div class="gallery-item visible" data-category="exterior">
+        <img src="./images/hero_villa.png" alt="Villa Posija Exterior Sunset" class="gallery-img">
+        <div class="gallery-overlay">
+          <div class="gallery-info">
+            <span class="gallery-category" data-translate="gallery_cat_exterior">Exterior</span>
+            <h3 class="gallery-title" data-translate="gallery_t9">Mediterranean Evening Garden</h3>
+          </div>
+          <div class="gallery-icon-view" style="align-self: flex-end; margin-top: auto;">
+            <i class="fa-solid fa-expand"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- View More / View Less Gallery Switcher -->
+    <div class="gallery-cta" style="text-align: center; margin-top: 4rem;">
+      <button id="viewMoreBtn" class="btn btn-gold-outline" data-translate="btn_view_more">View More</button>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       GALLERY LIGHTBOX MODAL
+       ========================================================================== -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-close"><i class="fa-solid fa-xmark"></i></div>
+    <div class="lightbox-nav lightbox-prev"><i class="fa-solid fa-chevron-left"></i></div>
+    <div class="lightbox-nav lightbox-next"><i class="fa-solid fa-chevron-right"></i></div>
+
+    <div class="lightbox-content">
+      <img src="" alt="" class="lightbox-img">
+      <div class="lightbox-caption">
+        <h4 class="lightbox-title"></h4>
+        <span class="lightbox-cat"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       CONTACT, LOCATION, & CALENDAR SECTION
+       ========================================================================== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Info Column & Styled Google Map -->
+        <div class="contact-info-container reveal reveal-left">
+          <div class="contact-info-text">
+            <span class="section-subtitle" data-translate="contact_subtitle">Inquiries</span>
+            <h2 class="about-heading" data-translate="contact_heading">Begin Your Exclusive Journey</h2>
+            <p class="about-description" style="margin-bottom: 0;" data-translate="contact_desc">
+              Contact our dedicated guest relations team to request your reservations, customize your itinerary, or
+              arrange VIP private concierge services in beautiful Baška.
+            </p>
+          </div>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <h4 class="contact-item-title" data-translate="contact_lbl_location">Location</h4>
+                <p class="contact-item-value">Zarok 44, 51523 Baška, Island of Krk, Croatia</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <h4 class="contact-item-title" data-translate="contact_lbl_reservations">Reservations</h4>
+                <p class="contact-item-value">+385 (0) 51 856 900</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <h4 class="contact-item-title" data-translate="contact_lbl_email">E-mail Address</h4>
+                <p class="contact-item-value">concierge@villaposija.hr</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Styled Map Container Placeholder -->
+          <div class="map-container">
+            <div class="map-placeholder">
+              <div class="map-placeholder-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+              <h4 class="map-placeholder-text" data-translate="map_title">Find Villa Posija</h4>
+              <p class="map-placeholder-sub" data-translate="map_sub">Baška Coast, Krk Island, Croatia</p>
+              <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-gold-outline"
+                style="padding: 0.5rem 1.2rem; font-size: 0.7rem;" data-translate="map_btn">Open Google Maps</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Form Column with Custom Datepicker Calendar -->
+        <div class="reveal reveal-right">
+          <form class="contact-form" id="contactForm" novalidate>
+
+            <!-- Name Input -->
+            <div class="form-group">
+              <input type="text" id="formName" class="form-input" required>
+              <label for="formName" class="form-label" data-translate="form_label_name">Full Name</label>
+            </div>
+
+            <!-- Email Input -->
+            <div class="form-group">
+              <input type="email" id="formEmail" class="form-input" required>
+              <label for="formEmail" class="form-label" data-translate="form_label_email">Email Address</label>
+            </div>
+
+            <!-- Custom Datepicker Widget -->
+            <div class="calendar-group">
+              <span class="calendar-group-label" data-translate="calendar_label">Select Availability / Dates</span>
+              <div class="calendar-widget">
+                <div class="calendar-header">
+                  <button type="button" class="calendar-nav-btn" id="calendarPrev"><i
+                      class="fa-solid fa-chevron-left"></i></button>
+                  <div class="calendar-title" id="calendarTitle">Month Year</div>
+                  <button type="button" class="calendar-nav-btn" id="calendarNext"><i
+                      class="fa-solid fa-chevron-right"></i></button>
+                </div>
+                <div class="calendar-grid">
+                  <div class="calendar-weekday" data-translate="day_mon">Mon</div>
+                  <div class="calendar-weekday" data-translate="day_tue">Tue</div>
+                  <div class="calendar-weekday" data-translate="day_wed">Wed</div>
+                  <div class="calendar-weekday" data-translate="day_thu">Thu</div>
+                  <div class="calendar-weekday" data-translate="day_fri">Fri</div>
+                  <div class="calendar-weekday" data-translate="day_sat">Sat</div>
+                  <div class="calendar-weekday" data-translate="day_sun">Sun</div>
+                </div>
+                <div class="calendar-grid" id="calendarDays">
+                  <!-- Injected via JS -->
+                </div>
+                <div class="calendar-legend">
+                  <div class="legend-item">
+                    <div class="legend-color available"></div>
+                    <span data-translate="legend_available">Available</span>
+                  </div>
+                  <div class="legend-item">
+                    <div class="legend-color booked"></div>
+                    <span data-translate="legend_booked">Booked</span>
+                  </div>
+                  <div class="legend-item">
+                    <div class="legend-color selected"></div>
+                    <span data-translate="legend_selected">Selected</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Travel Date Output Displays (Linked to Hidden Inputs) -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 3.5rem;">
+              <div style="position: relative;">
+                <span
+                  style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-gold); display: block; margin-bottom: 0.5rem;" data-translate="lbl_checkin_date">Check-In Date</span>
+                <div id="checkInText"
+                  style="padding: 0.8rem 0; border-bottom: 1px solid var(--border-color); color: var(--text-primary); font-size: 0.9rem; font-weight: 300;">Select check-in</div>
+                <input type="hidden" id="inputCheckIn" name="check_in" required>
+              </div>
+              <div style="position: relative;">
+                <span
+                  style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-gold); display: block; margin-bottom: 0.5rem;" data-translate="lbl_checkout_date">Check-Out Date</span>
+                <div id="checkOutText"
+                  style="padding: 0.8rem 0; border-bottom: 1px solid var(--border-color); color: var(--text-primary); font-size: 0.9rem; font-weight: 300;">Select check-out</div>
+                <input type="hidden" id="inputCheckOut" name="check_out" required>
+              </div>
+            </div>
+
+            <!-- Message Input -->
+            <div class="form-group" style="margin-bottom: 3.5rem;">
+              <textarea id="formMessage" class="form-input" required></textarea>
+              <label for="formMessage" class="form-label" data-translate="form_label_message">Special Requests / Message</label>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="submit-container" style="text-align: center;">
+              <button type="submit" class="btn btn-primary" style="width: 100%;" data-translate="btn_book_wa">Book Now via WhatsApp</button>
+              <span
+                style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.8rem; display: block; letter-spacing: 0.05em;" data-translate="wa_notice">
+                *You will be redirected to WhatsApp to confirm details directly.
+              </span>
+            </div>
+
+            <!-- Form Success Overlay -->
+            <div class="form-success-overlay" id="formSuccessOverlay">
+              <div class="success-icon" style="color: #25D366;"><i class="fa-brands fa-whatsapp"></i></div>
+              <h3 class="success-title font-serif" data-translate="success_title">Opening WhatsApp</h3>
+              <p class="success-message" data-translate="success_message">
+                We are opening WhatsApp in a new tab to submit your reservation request for the selected dates. If the
+                page did not open automatically, please click below.
+              </p>
+              <div style="display: flex; flex-direction: column; gap: 1rem; width: 100%;">
+                <a href="#" id="manualWaLink" target="_blank" class="btn btn-primary" data-translate="btn_manual_wa">Open WhatsApp Manually</a>
+                <button type="button" class="btn btn-gold-outline" id="successCloseBtn" data-translate="btn_close_window">Close Window</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER SECTION
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Column 1: Brand Info -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            VILLA <span class="logo-gold">POSIJA</span>
+          </div>
+          <p class="footer-desc" data-translate="footer_brand_desc">
+            A sanctuary where contemporary architectural elegance meets the traditional hand-carved stone walls of Krk
+            Island. Villa Posija offers an uncompromising level of service, luxury, and seclusion.
+          </p>
+        </div>
+
+        <!-- Column 2: Navigation Links -->
+        <div class="footer-nav">
+          <h4 class="footer-heading" data-translate="footer_nav_hdr">Navigations</h4>
+          <ul class="footer-links">
+            <li><a href="#hero" class="footer-link" data-translate="footer_link_home">Home</a></li>
+            <li><a href="#about" class="footer-link" data-translate="footer_link_about">About the Villa</a></li>
+            <li><a href="#amenities" class="footer-link" data-translate="footer_link_amenities">Premium Amenities</a></li>
+            <li><a href="#gallery" class="footer-link" data-translate="footer_link_gallery">Photo Gallery</a></li>
+            <li><a href="#contact" class="footer-link" data-translate="footer_link_contact">Contact / Booking</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact & Socials -->
+        <div class="footer-contact">
+          <h4 class="footer-heading" data-translate="footer_connect_hdr">Stay Connected</h4>
+          <p class="footer-desc" style="margin-bottom: 0.5rem;" data-translate="footer_connect_desc">
+            Follow our social media channels for luxury design inspirations and seasonal availability updates in
+            Croatia.
+          </p>
+          <div class="social-links">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram"><i
+                class="fa-brands fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook"><i
+                class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener" class="social-icon" aria-label="Pinterest"><i
+                class="fa-brands fa-pinterest-p"></i></a>
+            <a href="https://tripadvisor.com" target="_blank" rel="noopener" class="social-icon"
+              aria-label="Tripadvisor"><i class="fa-brands fa-tripadvisor"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <div data-translate="footer_copy">
+          &copy; 2026 Villa Posija. All Rights Reserved.
+        </div>
+        <div class="footer-studio" data-translate="footer_designed_by">
+          Designed by <a href="#hero" class="footer-studio-link">Antigravity Studio</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom Scripts -->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
