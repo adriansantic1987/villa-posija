@@ -24,10 +24,10 @@ function getCookie(name) {
   return null;
 }
 
-// --- Translation Dictionary ---
+/// --- Translation Dictionary ---
 const translations = {
   en: {
-    page_title: "Villa Posija | Luxury Stone Villa in Baška, Krk Island",
+    "meta-title": "Villa Posija | Luxury Stone Villa in Baška, Krk Island",
     nav_about: "About",
     nav_amenities: "Amenities",
     nav_gallery: "Gallery",
@@ -84,6 +84,16 @@ const translations = {
     gallery_t9: "Mediterranean Evening Garden",
     btn_view_more: "View More",
     btn_view_less: "View Less",
+    faq_subtitle: "Common Inquiries",
+    faq_title: "Frequently Asked Questions",
+    faq_q1: "What are the standard Check-in and Check-out times?",
+    faq_a1: "Check-in is from 16:00, and Check-out is until 10:00. This buffer allows our professional housekeeping team to perform a deep-cleaning and sanitize the villa before each guest arrival, ensuring our premium cleanliness standards are fully maintained.",
+    faq_q2: "Are pets allowed at the villa?",
+    faq_a2: "To preserve the high-end interior fabrics, premium hardwood floor finishings, and accommodate guests with severe allergies, pets are strictly not allowed at Villa Posija. We appreciate your understanding in helping us maintain the pristine state of the property.",
+    faq_q3: "Is parking available, and do you support Electric Vehicle charging?",
+    faq_a3: "Yes, Villa Posija includes a secure, gated private parking area on-site for up to 3 vehicles, equipped with active video surveillance. We also feature a complimentary dedicated Type 2 Electric Vehicle (EV) charging station for all guests.",
+    faq_q4: "Is there a minimum stay requirement?",
+    faq_a4: "Yes, to provide a complete, high-end experience, Villa Posija has a minimum stay requirement of 7 nights. Bookings can be made directly via our availability calendar and confirmed through a WhatsApp inquiry with guest services.",
     contact_subtitle: "Inquiries",
     contact_heading: "Begin Your Exclusive Journey",
     contact_desc: "Contact our dedicated guest relations team to request your reservations, customize your itinerary, or arrange VIP private concierge services in beautiful Baška.",
@@ -137,7 +147,7 @@ const translations = {
     whatsapp_opening: "OPENING WHATSAPP..."
   },
   hr: {
-    page_title: "Villa Posija | Luksuzna kamena vila u Baški, otok Krk",
+    "meta-title": "Villa Posija | Luksuzna kamena vila u Baški, otok Krk",
     nav_about: "O vili",
     nav_amenities: "Sadržaji",
     nav_gallery: "Galerija",
@@ -194,6 +204,16 @@ const translations = {
     gallery_t9: "Mediteranski vrt navečer",
     btn_view_more: "Prikaži više",
     btn_view_less: "Prikaži manje",
+    faq_subtitle: "Česta pitanja",
+    faq_title: "Često postavljana pitanja",
+    faq_q1: "Koje je standardno vrijeme prijave i odjave?",
+    faq_a1: "Prijava je od 16:00, a odjava do 10:00. Ovo vrijeme omogućuje našem profesionalnom osoblju da temeljito očisti i dezinficira vilu prije dolaska sljedećih gostiju, osiguravajući najviše standarde čistoće.",
+    faq_q2: "Jesu li kućni ljubimci dopušteni u vili?",
+    faq_a2: "Kako bismo očuvali luksuzne tkanine u interijeru, vrhunski drveni pod te osigurali ugodan boravak gostima s alergijama, kućni ljubimci u Villi Posija strogo su zabranjeni. Cijenimo vaše razumijevanje.",
+    faq_q3: "Je li osiguran parking i postoji li punionica za električna vozila?",
+    faq_a3: "Da, Villa Posija uključuje siguran, ograđen privatni parking u sklopu objekta za do 3 vozila, pod video nadzorom. Također nudimo besplatnu Type 2 punionicu za električna vozila (EV) za sve goste.",
+    faq_q4: "Postoji li pravilo o minimalnom trajanju boravka?",
+    faq_a4: "Da, kako bismo pružili vrhunsko iskustvo, minimalan boravak u Villi Posija iznosi 7 noćenja. Rezervacije se vrše izravno putem našeg kalendara i potvrđuju slanjem upita na WhatsApp.",
     contact_subtitle: "Upiti",
     contact_heading: "Započnite svoje ekskluzivno putovanje",
     contact_desc: "Kontaktirajte naš tim za odnose s gostima kako biste rezervirali smještaj, prilagodili svoj plan putovanja ili dogovorili VIP usluge.",
@@ -247,7 +267,7 @@ const translations = {
     whatsapp_opening: "OTVARANJE WHATSAPPA..."
   },
   de: {
-    page_title: "Villa Posija | Luxus-Steinvilla in Baška, Insel Krk",
+    "meta-title": "Villa Posija | Luxus-Steinvilla in Baška, Insel Krk",
     nav_about: "Über uns",
     nav_amenities: "Ausstattung",
     nav_gallery: "Galerie",
@@ -304,6 +324,16 @@ const translations = {
     gallery_t9: "Mediterraner Garten am Abend",
     btn_view_more: "Mehr anzeigen",
     btn_view_less: "Weniger anzeigen",
+    faq_subtitle: "Häufige Fragen",
+    faq_title: "Häufig gestellte Fragen",
+    faq_q1: "Wie sind die standardmäßigen An- und Abreisezeiten?",
+    faq_a1: "Der Check-in ist ab 16:00 Uhr und der Check-out bis 10:00 Uhr möglich. Dieser Zeitpuffer ermöglicht es unserem Reinigungsteam, die Villa vor der Ankunft neuer Gäste gründlich zu reinigen, um unsere hohen Sauberkeitsstandards zu gewährleisten.",
+    faq_q2: "Sind Haustiere in der Villa erlaubt?",
+    faq_a2: "Um die hochwertigen Stoffe im Innenbereich und die edlen Holzböden zu schonen sowie Gästen mit Tierhaarallergien einen angenehmen Aufenthalt zu ermöglichen, sind Haustiere in der Villa Posija strengstens verboten. Wir danken Ihnen für Ihr Verständnis.",
+    faq_q3: "Gibt es Parkplätze und eine Ladestation für Elektrofahrzeuge?",
+    faq_a3: "Ja, die Villa Posija verfügt über einen sicheren, umzäunten Privatparkplatz für bis zu 3 Fahrzeuge mit aktiver Videoüberwachung. Zudem steht unseren Gästen eine kostenfreie Typ-2-Ladestation für Elektrofahrzeuge zur Verfügung.",
+    faq_q4: "Gibt es eine Mindestaufenthaltsdauer?",
+    faq_a4: "Ja, um ein exklusives Urlaubserlebnis zu gewährleisten, gilt in der Villa Posija ein Mindestaufenthalt von 7 Nächten. Buchungen können direkt über den Belegungskalender vorgenommen und per WhatsApp-Anfrage bestätigt werden.",
     contact_subtitle: "Anfragen",
     contact_heading: "Beginnen Sie Ihre Reise",
     contact_desc: "Kontaktieren Sie unser Gäteservice-Team, um Reservierungen vorzunehmen, Ihre Reiseroute zu planen oder VIP-Services zu buchen.",
@@ -357,7 +387,7 @@ const translations = {
     whatsapp_opening: "WHATSAPP WIRD GEÖFFNET..."
   },
   it: {
-    page_title: "Villa Posija | Villa di lusso in pietra a Baška, isola di Krk",
+    "meta-title": "Villa Posija | Villa di lusso in pietra a Baška, isola di Krk",
     nav_about: "La villa",
     nav_amenities: "Servizi",
     nav_gallery: "Galleria",
@@ -414,6 +444,16 @@ const translations = {
     gallery_t9: "Giardino mediterraneo di sera",
     btn_view_more: "Mostra altro",
     btn_view_less: "Mostra meno",
+    faq_subtitle: "Domande frequenti",
+    faq_title: "Domande frequenti",
+    faq_q1: "Quali sono gli orari standard di check-in e check-out?",
+    faq_a1: "Il check-in è a partire dalle 16:00 e il check-out è entro le 10:00. Questo intervallo consente al nostro team di pulizia professionale di igienizzare a fondo la villa prima di ogni arrivo, garantendo standard di pulizia eccellenti.",
+    faq_q2: "Sono ammessi animali domestici nella villa?",
+    faq_a2: "Per preservare i tessuti di pregio degli interni, i pavimenti in legno e accogliere al meglio gli ospiti con allergie, gli animali domestici non sono ammessi a Villa Posija. Vi ringraziamo per la comprensione.",
+    faq_q3: "È disponibile un parcheggio e supportate la ricarica per veicoli elettrici?",
+    faq_a3: "Sì, Villa Posija dispone di un parcheggio privato recintato e sicuro per un massimo di 3 auto, monitorato da videosorveglianza. Mettiamo inoltre a disposizione una stazione di ricarica per veicoli elettrici (EV) di Tipo 2 gratuita.",
+    faq_q4: "È previsto un soggiorno minimo?",
+    faq_a4: "Sì, per offrire un'esperienza esclusiva, Villa Posija richiede un soggiorno minimo di 7 notti. Le prenotazioni possono essere effettuate tramite il calendario delle disponibilità e confermate via WhatsApp.",
     contact_subtitle: "Richieste",
     contact_heading: "Iniziate il vostro viaggio",
     contact_desc: "Contattate il nostro team dedicato per prenotare il vostro soggiorno, personalizzare il vostro itinerario o richiedere servizi VIP.",
@@ -463,7 +503,6 @@ const translations = {
     past_date: "Data passata",
     booked_date: "Data prenotata",
     months: ['Gennaio', 'Febbraio', 'Marzo', 'Aprile', 'Maggio', 'Giugno', 'Luglio', 'Agosto', 'Settembre', 'Ottobre', 'Novembre', 'Dicembre'],
-    whatsapp_opening: "APERTURA WHATSAPP..."
   }
 };
 
@@ -1218,6 +1257,12 @@ END:VCALENDAR`;
       }
     });
 
+    // Recalculate heights of any expanded FAQ items to adjust to new translation text lengths
+    document.querySelectorAll('.faq-item.active').forEach(activeItem => {
+      const activeAns = activeItem.querySelector('.faq-answer');
+      activeAns.style.maxHeight = activeAns.scrollHeight + 'px';
+    });
+
     updateDisplayOutputs();
     renderCalendarGrid();
     updateGalleryBtnText();
@@ -1288,6 +1333,39 @@ END:VCALENDAR`;
           navLinks.classList.remove('active');
           document.body.style.overflow = '';
         }
+      }
+    });
+  });
+
+  // FAQ Accordion Interactivity
+  const faqQuestions = document.querySelectorAll('.faq-question');
+  faqQuestions.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.parentElement;
+      const answer = item.querySelector('.faq-answer');
+      const isActive = item.classList.contains('active');
+      
+      // Close other FAQs for cleaner accordion presentation
+      document.querySelectorAll('.faq-item.active').forEach(activeItem => {
+        if (activeItem !== item) {
+          activeItem.classList.remove('active');
+          const activeAns = activeItem.querySelector('.faq-answer');
+          activeAns.style.maxHeight = null;
+          activeAns.style.opacity = '0';
+          activeItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        }
+      });
+      
+      if (isActive) {
+        item.classList.remove('active');
+        answer.style.maxHeight = null;
+        answer.style.opacity = '0';
+        btn.setAttribute('aria-expanded', 'false');
+      } else {
+        item.classList.add('active');
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        answer.style.opacity = '1';
+        btn.setAttribute('aria-expanded', 'true');
       }
     });
   });
