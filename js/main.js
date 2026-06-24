@@ -150,7 +150,21 @@ const translations = {
     past_date: "Past Date",
     booked_date: "Booked Date",
     months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-    whatsapp_opening: "OPENING WHATSAPP..."
+    whatsapp_opening: "OPENING WHATSAPP...",
+    cookie_title: "We value your privacy",
+    cookie_desc: "We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking \"Accept All\", you consent to our use of cookies.",
+    cookie_btn_accept: "Accept All",
+    cookie_btn_customize: "Customize",
+    cookie_modal_title: "Cookie Preferences",
+    cookie_modal_desc: "Customize your cookie preferences. Essential cookies are required to run the site and cannot be disabled.",
+    cookie_lbl_essential: "Essential Cookies",
+    cookie_desc_essential: "Required for basic website functionality, language selection, and theme settings.",
+    cookie_lbl_analytics: "Analytics Cookies",
+    cookie_desc_analytics: "Help us analyze website traffic and user behavior to continuously improve our services.",
+    cookie_lbl_marketing: "Marketing Cookies",
+    cookie_desc_marketing: "Enable personalized features, social sharing, and targeted promotional content.",
+    cookie_btn_save: "Save Preferences",
+    cookie_always_active: "Always Active"
   },
   hr: {
     "meta-title": "Villa Posija | Luksuzna kamena vila u Krasu, otok Krk",
@@ -276,7 +290,21 @@ const translations = {
     past_date: "Prošli datum",
     booked_date: "Zauzet datum",
     months: ['Siječanj', 'Veljača', 'Ožujak', 'Travanj', 'Svibanj', 'Lipanj', 'Srpanj', 'Kolovoz', 'Rujan', 'Listopad', 'Studeni', 'Prosinac'],
-    whatsapp_opening: "OTVARANJE WHATSAPPA..."
+    whatsapp_opening: "OTVARANJE WHATSAPPA...",
+    cookie_title: "Cijenimo vašu privatnost",
+    cookie_desc: "Koristimo kolačiće kako bismo poboljšali vaše iskustvo pregledavanja, prikazivali personalizirani sadržaj i analizirali naš promet. Klikom na \"Prihvati sve\", pristajete na našu upotrebu kolačića.",
+    cookie_btn_accept: "Prihvati sve",
+    cookie_btn_customize: "Prilagodi",
+    cookie_modal_title: "Postavke kolačića",
+    cookie_modal_desc: "Prilagodite svoje postavke kolačića. Neophodni kolačići potrebni su za rad web stranice i ne mogu se isključiti.",
+    cookie_lbl_essential: "Neophodni kolačići",
+    cookie_desc_essential: "Potrebni za osnovnu funkcionalnost web stranice, odabir jezika i postavke teme.",
+    cookie_lbl_analytics: "Analitički kolačići",
+    cookie_desc_analytics: "Pomažu nam analizirati promet na web stranici i ponašanje korisnika kako bismo poboljšali uslugu.",
+    cookie_lbl_marketing: "Marketinški kolačići",
+    cookie_desc_marketing: "Omogućuju personalizirane značajke, dijeljenje na društvenim mrežama i ciljani promotivni sadržaj.",
+    cookie_btn_save: "Spremi odabir",
+    cookie_always_active: "Uvijek aktivno"
   },
   de: {
     "meta-title": "Villa Posija | Luxus-Steinvilla in Kras, Insel Krk",
@@ -402,7 +430,21 @@ const translations = {
     past_date: "Vergangenes Datum",
     booked_date: "Gebuchtes Datum",
     months: ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'],
-    whatsapp_opening: "WHATSAPP WIRD GEÖFFNET..."
+    whatsapp_opening: "WHATSAPP WIRD GEÖFFNET...",
+    cookie_title: "Wir schätzen Ihre Privatsphäre",
+    cookie_desc: "Wir verwenden Cookies, um Ihr Surferlebnis zu verbessern, personalisierte Inhalte bereitzustellen und unseren Datenverkehr zu analysieren. Durch Klicken auf „Alle akzeptieren“ stimmen Sie der Verwendung von Cookies zu.",
+    cookie_btn_accept: "Alle akzeptieren",
+    cookie_btn_customize: "Anpassen",
+    cookie_modal_title: "Cookie-Einstellungen",
+    cookie_modal_desc: "Passen Sie Ihre Cookie-Einstellungen an. Essenzielle Cookies sind für den Betrieb der Website erforderlich und können nicht deaktiviert werden.",
+    cookie_lbl_essential: "Essenzielle Cookies",
+    cookie_desc_essential: "Erforderlich für die grundlegende Funktionalität der Website, Sprachauswahl und Theme-Einstellungen.",
+    cookie_lbl_analytics: "Analytische Cookies",
+    cookie_desc_analytics: "Helfen uns, den Website-Verkehr und das Nutzerverhalten zu analysieren, um unsere Dienste stetig zu verbessern.",
+    cookie_lbl_marketing: "Marketing-Cookies",
+    cookie_desc_marketing: "Ermöglichen personalisierte Funktionen, das Teilen in sozialen Netzwerken und zielgerichtete Werbeinhalte.",
+    cookie_btn_save: "Auswahl speichern",
+    cookie_always_active: "Immer aktiv"
   },
   it: {
     "meta-title": "Villa Posija | Villa di lusso in pietra a Kras, isola di Krk",
@@ -528,7 +570,21 @@ const translations = {
     past_date: "Data passata",
     booked_date: "Data prenotata",
     months: ['Gennaio', 'Febbraio', 'Marzo', 'Aprile', 'Maggio', 'Giugno', 'Luglio', 'Agosto', 'Settembre', 'Ottobre', 'Novembre', 'Dicembre'],
-    whatsapp_opening: "APERTURA WHATSAPP..."
+    whatsapp_opening: "APERTURA WHATSAPP...",
+    cookie_title: "Valorizziamo la tua privacy",
+    cookie_desc: "Utilizziamo i cookie per migliorare la tua esperienza di navigazione, mostrare contenuti personalizzati e analizzare il nostro traffico. Cliccando su \"Accetta tutti\", acconsenti al nostro utilizzo dei cookie.",
+    cookie_btn_accept: "Accetta tutti",
+    cookie_btn_customize: "Personalizza",
+    cookie_modal_title: "Preferenze Cookie",
+    cookie_modal_desc: "Personalizza le tue preferenze sui cookie. I cookie essenziali sono necessari per il funzionamento del sito e non possono essere disattivati.",
+    cookie_lbl_essential: "Cookie Essenziali",
+    cookie_desc_essential: "Richiesti per le funzionalità di base del sito, la selezione della lingua e le impostazioni del tema.",
+    cookie_lbl_analytics: "Cookie Analitici",
+    cookie_desc_analytics: "Ci aiutano ad analizzare il traffico del sito e il comportamento degli utenti per migliorare costantemente i nostri servizi.",
+    cookie_lbl_marketing: "Cookie di Marketing",
+    cookie_desc_marketing: "Abilitano funzioni personalizzate, la condivisione sui social e contenuti promozionali mirati.",
+    cookie_btn_save: "Salva preferenze",
+    cookie_always_active: "Sempre attivo"
   }
 };
 
@@ -1600,6 +1656,110 @@ END:VCALENDAR`;
     });
   });
 
+  // ------------------------------------------------------------------------
+  // 8. COOKIE CONSENT BANNER & CUSTOMIZATION DIALOG
+  // ------------------------------------------------------------------------
+  const cookieBanner = document.getElementById('cookieBanner');
+  const cookieModal = document.getElementById('cookieModal');
+  const btnAcceptAllCookies = document.getElementById('btnAcceptAllCookies');
+  const btnAcceptAllCookiesModal = document.getElementById('btnAcceptAllCookiesModal');
+  const btnCustomizeCookies = document.getElementById('btnCustomizeCookies');
+  const cookieModalCloseBtn = document.getElementById('cookieModalCloseBtn');
+  const cookieModalBackdrop = document.getElementById('cookieModalBackdrop');
+  const btnSaveCookieSettings = document.getElementById('btnSaveCookieSettings');
+  const cookieOptAnalytics = document.getElementById('cookieOptAnalytics');
+  const cookieOptMarketing = document.getElementById('cookieOptMarketing');
+
+  const COOKIE_STORAGE_KEY = 'villa_posija_cookie_consent';
+
+  function saveConsent(consent) {
+    localStorage.setItem(COOKIE_STORAGE_KEY, JSON.stringify(consent));
+    console.log("Cookie consent settings saved:", consent);
+    window.dispatchEvent(new CustomEvent('cookieConsentChanged', { detail: consent }));
+  }
+
+  function hideCookieUI() {
+    if (cookieBanner) cookieBanner.classList.remove('active');
+    if (cookieModal) cookieModal.classList.remove('active');
+  }
+
+  function initCookieConsent() {
+    const savedConsent = localStorage.getItem(COOKIE_STORAGE_KEY);
+    
+    if (!savedConsent) {
+      setTimeout(() => {
+        if (cookieBanner) cookieBanner.classList.add('active');
+      }, 1000);
+    } else {
+      try {
+        const consent = JSON.parse(savedConsent);
+        console.log("Cookie consent loaded from localStorage:", consent);
+        if (cookieOptAnalytics) cookieOptAnalytics.checked = !!consent.analytics;
+        if (cookieOptMarketing) cookieOptMarketing.checked = !!consent.marketing;
+      } catch (e) {
+        console.error("Failed to parse saved cookie consent:", e);
+      }
+    }
+
+    if (btnAcceptAllCookies) {
+      btnAcceptAllCookies.addEventListener('click', () => {
+        const consent = { essential: true, analytics: true, marketing: true };
+        saveConsent(consent);
+        if (cookieOptAnalytics) cookieOptAnalytics.checked = true;
+        if (cookieOptMarketing) cookieOptMarketing.checked = true;
+        hideCookieUI();
+      });
+    }
+
+    if (btnAcceptAllCookiesModal) {
+      btnAcceptAllCookiesModal.addEventListener('click', () => {
+        const consent = { essential: true, analytics: true, marketing: true };
+        saveConsent(consent);
+        if (cookieOptAnalytics) cookieOptAnalytics.checked = true;
+        if (cookieOptMarketing) cookieOptMarketing.checked = true;
+        hideCookieUI();
+      });
+    }
+
+    if (btnCustomizeCookies) {
+      btnCustomizeCookies.addEventListener('click', () => {
+        const savedConsent = localStorage.getItem(COOKIE_STORAGE_KEY);
+        if (savedConsent) {
+          try {
+            const consent = JSON.parse(savedConsent);
+            if (cookieOptAnalytics) cookieOptAnalytics.checked = !!consent.analytics;
+            if (cookieOptMarketing) cookieOptMarketing.checked = !!consent.marketing;
+          } catch (e) {}
+        }
+        if (cookieModal) cookieModal.classList.add('active');
+      });
+    }
+
+    const closeModal = () => {
+      if (cookieModal) cookieModal.classList.remove('active');
+    };
+
+    if (cookieModalCloseBtn) {
+      cookieModalCloseBtn.addEventListener('click', closeModal);
+    }
+
+    if (cookieModalBackdrop) {
+      cookieModalBackdrop.addEventListener('click', closeModal);
+    }
+
+    if (btnSaveCookieSettings) {
+      btnSaveCookieSettings.addEventListener('click', () => {
+        const consent = {
+          essential: true,
+          analytics: !!cookieOptAnalytics?.checked,
+          marketing: !!cookieOptMarketing?.checked
+        };
+        saveConsent(consent);
+        hideCookieUI();
+      });
+    }
+  }
+
   // --- INITIALIZATION ---
   let initialLang = getCookie('lang');
   if (!initialLang) {
@@ -1614,4 +1774,5 @@ END:VCALENDAR`;
   renderGallery();
   setLanguage(initialLang);
   updateGalleryVisibility();
+  initCookieConsent();
 });

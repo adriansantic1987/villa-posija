@@ -594,6 +594,81 @@
     </div>
   </footer>
 
+  <!-- Cookie Consent Banner -->
+  <div class="cookie-banner" id="cookieBanner">
+    <div class="cookie-banner-content">
+      <div class="cookie-icon-wrapper">
+        <i class="fa-solid fa-cookie-bite"></i>
+      </div>
+      <div class="cookie-text">
+        <h4 class="cookie-title font-serif" data-translate="cookie_title">We value your privacy</h4>
+        <p class="cookie-description" data-translate="cookie_desc">
+          We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.
+        </p>
+      </div>
+    </div>
+    <div class="cookie-banner-actions">
+      <button type="button" class="btn btn-gold-outline" id="btnCustomizeCookies" data-translate="cookie_btn_customize">Customize</button>
+      <button type="button" class="btn btn-primary" id="btnAcceptAllCookies" data-translate="cookie_btn_accept">Accept All</button>
+    </div>
+  </div>
+
+  <!-- Cookie Consent Customize Modal -->
+  <div class="cookie-modal" id="cookieModal" role="dialog" aria-modal="true" aria-labelledby="cookieModalTitle">
+    <div class="cookie-modal-backdrop" id="cookieModalBackdrop"></div>
+    <div class="cookie-modal-content">
+      <button type="button" class="cookie-modal-close" id="cookieModalCloseBtn" aria-label="Close Settings"><i class="fa-solid fa-xmark"></i></button>
+      <h3 class="cookie-modal-title font-serif" id="cookieModalTitle" data-translate="cookie_modal_title">Cookie Preferences</h3>
+      <p class="cookie-modal-desc" data-translate="cookie_modal_desc">Customize your cookie preferences. Essential cookies are required to run the site and cannot be disabled.</p>
+      
+      <div class="cookie-options-list">
+        <!-- Essential Options -->
+        <div class="cookie-option-item">
+          <div class="cookie-option-info">
+            <h4 class="cookie-option-title" data-translate="cookie_lbl_essential">Essential Cookies</h4>
+            <p class="cookie-option-desc" data-translate="cookie_desc_essential">Required for basic website functionality, language selection, and theme settings.</p>
+          </div>
+          <div class="cookie-option-action">
+            <span class="cookie-status-badge" data-translate="cookie_always_active">Always Active</span>
+          </div>
+        </div>
+
+        <!-- Analytics Options -->
+        <div class="cookie-option-item">
+          <div class="cookie-option-info">
+            <h4 class="cookie-option-title" data-translate="cookie_lbl_analytics">Analytics Cookies</h4>
+            <p class="cookie-option-desc" data-translate="cookie_desc_analytics">Help us analyze website traffic and user behavior to continuously improve our services.</p>
+          </div>
+          <div class="cookie-option-action">
+            <label class="cookie-switch">
+              <input type="checkbox" id="cookieOptAnalytics" checked>
+              <span class="cookie-slider"></span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Marketing Options -->
+        <div class="cookie-option-item">
+          <div class="cookie-option-info">
+            <h4 class="cookie-option-title" data-translate="cookie_lbl_marketing">Marketing Cookies</h4>
+            <p class="cookie-option-desc" data-translate="cookie_desc_marketing">Enable personalized features, social sharing, and targeted promotional content.</p>
+          </div>
+          <div class="cookie-option-action">
+            <label class="cookie-switch">
+              <input type="checkbox" id="cookieOptMarketing" checked>
+              <span class="cookie-slider"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="cookie-modal-actions">
+        <button type="button" class="btn btn-gold-outline" id="btnSaveCookieSettings" data-translate="cookie_btn_save">Save Preferences</button>
+        <button type="button" class="btn btn-primary" id="btnAcceptAllCookiesModal" data-translate="cookie_btn_accept">Accept All</button>
+      </div>
+    </div>
+  </div>
+
   <!-- Custom Scripts -->
   <script src="./js/main.js"></script>
 </body>
