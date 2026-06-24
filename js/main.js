@@ -27,7 +27,7 @@ function getCookie(name) {
 /// --- Translation Dictionary ---
 const translations = {
   en: {
-    "meta-title": "Villa Posija | Luxury Stone Villa in Baška, Krk Island",
+    "meta-title": "Villa Posija | Luxury Stone Villa in Kras, Krk Island",
     nav_about: "About",
     nav_amenities: "Amenities",
     nav_gallery: "Gallery",
@@ -35,12 +35,12 @@ const translations = {
     nav_book_now: "Book Now",
     hero_subtitle: "Premium Adriatic Escape",
     hero_title: "Where Luxury Meets The Horizon",
-    hero_text: "An exquisite private retreat nestled in Baška on the Island of Krk, Croatia. Blending authentic premium stone architecture with modern sophistication, Villa Posija offers panoramic Adriatic Sea views, a heated infinity pool, and pristine Mediterranean surroundings.",
+    hero_text: "An exquisite private retreat nestled in Kras on the Island of Krk, Croatia. Blending authentic premium stone architecture with modern sophistication, Villa Posija offers a heated pool, quiet countryside privacy, and pristine Mediterranean surroundings.",
     hero_cta_explore: "Explore Villa",
     hero_cta_availability: "View Availability",
     about_subtitle: "The Retreat",
     about_heading: "Authentic Croatian Stone Architecture & Contemporary Comfort",
-    about_desc: "Located in the breathtaking coastal town of Baška on Krk Island, Villa Posija represents a masterclass in regional heritage design. Crafted using local hand-carved stone, the villa integrates seamlessly with the surrounding silver olive groves, wild rosemary bushes, and rocky Mediterranean hills, offering absolute seclusion and a connection to the Adriatic coast.",
+    about_desc: "Located in the serene village of Kras on Krk Island, Villa Posija represents a masterclass in regional heritage design. Crafted using local hand-carved stone, the villa integrates seamlessly with the surrounding silver olive groves, wild rosemary bushes, and peaceful Mediterranean nature, offering absolute seclusion and a relaxing island getaway.",
     about_f1_title: "Authentic Stone Masonry",
     about_f1_desc: "Traditional thick stone wall architecture ensuring natural insulation and rustic coastal elegance.",
     about_f2_title: "Heated Infinity Pool",
@@ -52,36 +52,42 @@ const translations = {
     about_cta: "Contact Guest Services",
     amenities_subtitle: "World-Class Services",
     amenities_title: "Curated For Complete Comfort",
-    amenity_1_title: "Heated Infinity Pool",
-    amenity_1_desc: "Custom-heated pool overlooking the Adriatic Sea, equipped with hydro-massage jets and a spacious deck.",
-    amenity_2_title: "High-Speed Wi-Fi",
-    amenity_2_desc: "Full mesh gigabit Wi-Fi covers the entire villa, terraces, pool deck, and gardens with zero deadzones.",
-    amenity_3_title: "AC / Climate Control",
-    amenity_3_desc: "Silent, fully integrated modern air conditioning throughout all suites and living spaces.",
-    amenity_4_title: "Private Secure Parking",
-    amenity_4_desc: "Secure private parking on-site behind electric wrought iron gates with active video surveillance.",
-    amenity_5_title: "BBQ & Dining Terrace",
-    amenity_5_desc: "Authentic outdoor stone fireplace, built-in kitchen, and spacious dining pergola for alfresco meals.",
-    amenity_6_title: "Wellness & Sauna",
-    amenity_6_desc: "Premium private wellness space with Finnish sauna, steam shower room, and dedicated massage treatment corner.",
+    amenity_1_title: "Outdoor Pool",
+    amenity_1_desc: "Beautiful custom outdoor heated infinity pool with crystal clear waters and spacious sunbathing deck.",
+    amenity_2_title: "Outdoor BBQ Zone",
+    amenity_2_desc: "Authentic outdoor stone fireplace, built-in kitchen, and spacious dining area for memorable outdoor meals.",
+    amenity_3_title: "Common Lounge Room",
+    amenity_3_desc: "A cozy communal space designed for relaxation, social gatherings, games, and shared moments.",
+    amenity_4_title: "Air Conditioning",
+    amenity_4_desc: "Silent, fully integrated modern air conditioning throughout all rooms for your complete comfort.",
+    amenity_5_title: "Free Wi-Fi",
+    amenity_5_desc: "High-speed mesh gigabit wireless internet access throughout the entire villa, garden, and pool area.",
+    amenity_6_title: "Secured Private Parking",
+    amenity_6_desc: "Safe and private on-site parking behind electric gates under active video surveillance.",
     gallery_subtitle: "Visual Splendor",
     gallery_title: "Experience Villa Posija",
-    gallery_filter_all: "All Photos",
-    gallery_filter_interior: "Interior",
     gallery_filter_exterior: "Exterior",
-    gallery_filter_pool: "Pool / Spa",
+    gallery_filter_interior: "Interior",
     gallery_cat_exterior: "Exterior",
-    gallery_t1: "Villa Facade at Sunset",
     gallery_cat_interior: "Interior",
-    gallery_t2: "Grand Living Room",
-    gallery_cat_pool: "Pool / Spa",
-    gallery_t3: "Cliffside Infinity Pool",
-    gallery_t4: "Master Suite Sanctuary",
-    gallery_t5: "Alfresco Dining Terrace",
-    gallery_t6: "Private Wellness Sauna",
-    gallery_t7: "Cozy Stone Fireplace",
-    gallery_t8: "Infinity Pool at Night",
-    gallery_t9: "Mediterranean Evening Garden",
+    gallery_t_pool: "Heated Infinity Pool",
+    gallery_t_bbq: "Barbecue & Dining Pergola",
+    gallery_t_facade: "Villa Facade at Sunset",
+    gallery_t_balcony: "Scenic Balcony View",
+    gallery_t_guvno: "Traditional Stone Circle (Guvno)",
+    gallery_t_playground: "Playground & Sports Area",
+    gallery_t_kitchen: "Fully Equipped Kitchen",
+    gallery_t_dining: "Elegant Dining Area",
+    gallery_t_living: "Grand Living Room",
+    gallery_t_entertainment: "Entertainment Room",
+    gallery_t_soba1: "Master Suite Sanctuary",
+    gallery_t_soba2: "Deluxe Bedroom 2",
+    gallery_t_soba3: "Premium Bedroom 3",
+    gallery_t_soba4: "Cozy Guest Room 4",
+    gallery_t_wc1: "En-suite Bathroom 1",
+    gallery_t_wc2: "En-suite Bathroom 2",
+    gallery_t_wc3: "En-suite Bathroom 3",
+    gallery_t_wc4: "En-suite Bathroom 4",
     btn_view_more: "View More",
     btn_view_less: "View Less",
     faq_subtitle: "Common Inquiries",
@@ -96,12 +102,12 @@ const translations = {
     faq_a4: "Yes, to provide a complete, high-end experience, Villa Posija has a minimum stay requirement of 7 nights. Bookings can be made directly via our availability calendar and confirmed through a WhatsApp inquiry with guest services.",
     contact_subtitle: "Inquiries",
     contact_heading: "Begin Your Exclusive Journey",
-    contact_desc: "Contact our dedicated guest relations team to request your reservations, customize your itinerary, or arrange VIP private concierge services in beautiful Baška.",
+    contact_desc: "Contact our dedicated guest relations team to request your reservations, customize your itinerary, or arrange VIP private concierge services in Kras, Krk.",
     contact_lbl_location: "Location",
     contact_lbl_reservations: "Reservations",
     contact_lbl_email: "E-mail Address",
     map_title: "Find Villa Posija",
-    map_sub: "Baška Coast, Krk Island, Croatia",
+    map_sub: "Kras, Krk Island, Croatia",
     map_btn: "Open Google Maps",
     form_label_name: "Full Name",
     form_label_email: "Email Address",
@@ -147,7 +153,7 @@ const translations = {
     whatsapp_opening: "OPENING WHATSAPP..."
   },
   hr: {
-    "meta-title": "Villa Posija | Luksuzna kamena vila u Baški, otok Krk",
+    "meta-title": "Villa Posija | Luksuzna kamena vila u Krasu, otok Krk",
     nav_about: "O vili",
     nav_amenities: "Sadržaji",
     nav_gallery: "Galerija",
@@ -155,12 +161,12 @@ const translations = {
     nav_book_now: "Rezerviraj",
     hero_subtitle: "Vrhunski jadranski bijeg",
     hero_title: "Gdje luksuz susreće horizont",
-    hero_text: "Prekrasno privatno utočište smješteno u Baški na otoku Krku, Hrvatska. Spajajući autentičnu kamenu arhitekturu s modernom sofisticiranošću, Villa Posija nudi panoramski pogled na Jadransko more, grijani preljevni bazen i netaknutu mediteransku prirodu.",
+    hero_text: "Prekrasno privatno utočište smješteno u Krasu na otoku Krku, Hrvatska. Spajajući autentičnu kamenu arhitekturu s modernom sofisticiranošću, Villa Posija nudi grijani bazen, mir i seosku privatnost te netaknutu mediteransku prirodu.",
     hero_cta_explore: "Istražite vilu",
     hero_cta_availability: "Slobodni termini",
     about_subtitle: "Utočište",
     about_heading: "Autentična hrvatska kamena arhitektura i suvremena udobnost",
-    about_desc: "Smještena u prekrasnom obalnom gradiću Baški na otoku Krku, Villa Posija predstavlja remek-djelo regionalnog naslijeđa. Izgrađena od lokalnog, ručno klesanog kamena, vila se savršeno uklapa u okolne srebrne maslinike, grmove ružmarina i stjenovite brežuljke, nudeći potpunu privatnost i povezanost s jadranskom obalom.",
+    about_desc: "Smještena u mirnom mjestu Kras na otoku Krku, Villa Posija predstavlja remek-djelo regionalnog naslijeđa. Izgrađena od lokalnog, ručno klesanog kamena, vila se savršeno uklapa u okolne srebrne maslinike, grmove ružmarina i mirnu mediteransku prirodu, nudeći potpunu privatnost i opuštajući otočki odmor.",
     about_f1_title: "Autentični kameni zidovi",
     about_f1_desc: "Tradicionalna arhitektura s debelim kamenim zidovima pruža prirodnu izolaciju i rustikalnu eleganciju.",
     about_f2_title: "Grijani preljevni bazen",
@@ -172,36 +178,42 @@ const translations = {
     about_cta: "Kontaktirajte recepciju",
     amenities_subtitle: "Usluge svjetske klase",
     amenities_title: "Kreirano za potpunu udobnost",
-    amenity_1_title: "Grijani preljevni bazen",
-    amenity_1_desc: "Grijani bazen s pogledom na Jadransko more, opremljen hidromasažnim mlaznicama i prostranom palubom.",
-    amenity_2_title: "Brzi Wi-Fi internet",
-    amenity_2_desc: "Mesh gigabitni Wi-Fi pokriva cijelu vilu, terase, bazen i vrtove bez ijedne mrtve zone.",
-    amenity_3_title: "Klima uređaji",
-    amenity_3_desc: "Tihi, potpuno integrirani klima uređaji u svim apartmanima i dnevnim prostorima.",
-    amenity_4_title: "Privatni sigurni parking",
-    amenity_4_desc: "Siguran privatni parking u sklopu objekta iza električnih vrata s video nadzorom.",
-    amenity_5_title: "Roštilj i terasa za ručavanje",
-    amenity_5_desc: "Autentični kameni kamin, ugrađena vanjska kuhinja i prostrana pergola za objedovanje na otvorenom.",
-    amenity_6_title: "Wellness i sauna",
-    amenity_6_desc: "Vrhunski privatni wellness prostor s finskom saunom, parnim tušem i kutkom za masažu.",
+    amenity_1_title: "Vanjski bazen",
+    amenity_1_desc: "Prekrasan grijani preljevni bazen s kristalno čistom vodom i prostranom terasom za sunčanje.",
+    amenity_2_title: "Vanjska BBQ zona i roštilj",
+    amenity_2_desc: "Autentični kameni kamin, ugrađena vanjska kuhinja i stol za objedovanje na otvorenom.",
+    amenity_3_title: "Soba za druženje",
+    amenity_3_desc: "Udoban zajednički prostor namijenjen opuštanju, druženju, zabavi i zajedničkim trenucima.",
+    amenity_4_title: "Klima uređaj",
+    amenity_4_desc: "Tihi, potpuno integrirani klima uređaji u svim prostorijama za Vašu potpunu ugodu.",
+    amenity_5_title: "Besplatan Wi-Fi",
+    amenity_5_desc: "Brzi bežični internet dostupan na cijelom posjedu, uključujući terase, vrt i bazen.",
+    amenity_6_title: "Osiguran privatni parking",
+    amenity_6_desc: "Siguran i besplatan privatni parking u sklopu objekta pod video nadzorom.",
     gallery_subtitle: "Vizualni sjaj",
     gallery_title: "Doživite Villu Posija",
-    gallery_filter_all: "Sve fotografije",
-    gallery_filter_interior: "Interijer",
     gallery_filter_exterior: "Eksterijer",
-    gallery_filter_pool: "Bazen / Spa",
+    gallery_filter_interior: "Interijer",
     gallery_cat_exterior: "Eksterijer",
-    gallery_t1: "Fasada vile u sumrak",
     gallery_cat_interior: "Interijer",
-    gallery_t2: "Prostrani dnevni boravak",
-    gallery_cat_pool: "Bazen / Spa",
-    gallery_t3: "Preljevni bazen na litici",
-    gallery_t4: "Glavna spavaća soba",
-    gallery_t5: "Terasa za objedovanje",
-    gallery_t6: "Privatna finska sauna",
-    gallery_t7: "Kameni kamin u boravku",
-    gallery_t8: "Preljevni bazen noću",
-    gallery_t9: "Mediteranski vrt navečer",
+    gallery_t_pool: "Grijani preljevni bazen",
+    gallery_t_bbq: "Kamin i vanjska blagovaonica",
+    gallery_t_facade: "Fasada vile u sumrak",
+    gallery_t_balcony: "Pogled s balkona",
+    gallery_t_guvno: "Tradicionalno guvno",
+    gallery_t_playground: "Igralište i sportska zona",
+    gallery_t_kitchen: "Gourmet kuhinja",
+    gallery_t_dining: "Prostrana blagovaonica",
+    gallery_t_living: "Luksuzni dnevni boravak",
+    gallery_t_entertainment: "Soba za zabavu i razonodu",
+    gallery_t_soba1: "Glavna spavaća soba",
+    gallery_t_soba2: "Deluxe spavaća soba 2",
+    gallery_t_soba3: "Premium spavaća soba 3",
+    gallery_t_soba4: "Udobna spavaća soba 4",
+    gallery_t_wc1: "Kupaonica 1",
+    gallery_t_wc2: "Kupaonica 2",
+    gallery_t_wc3: "Kupaonica 3",
+    gallery_t_wc4: "Kupaonica 4",
     btn_view_more: "Prikaži više",
     btn_view_less: "Prikaži manje",
     faq_subtitle: "Česta pitanja",
@@ -216,12 +228,12 @@ const translations = {
     faq_a4: "Da, kako bismo pružili vrhunsko iskustvo, minimalan boravak u Villi Posija iznosi 7 noćenja. Rezervacije se vrše izravno putem našeg kalendara i potvrđuju slanjem upita na WhatsApp.",
     contact_subtitle: "Upiti",
     contact_heading: "Započnite svoje ekskluzivno putovanje",
-    contact_desc: "Kontaktirajte naš tim za odnose s gostima kako biste rezervirali smještaj, prilagodili svoj plan putovanja ili dogovorili VIP usluge.",
+    contact_desc: "Kontaktirajte naš tim za odnose s gostima kako biste rezervirali smještaj, prilagodili svoj plan putovanja ili dogovorili VIP usluge u Krasu na Krku.",
     contact_lbl_location: "Lokacija",
     contact_lbl_reservations: "Rezervacije",
     contact_lbl_email: "E-mail adresa",
     map_title: "Pronađite Villu Posija",
-    map_sub: "Obala Baške, otok Krk, Hrvatska",
+    map_sub: "Kras, otok Krk, Hrvatska",
     map_btn: "Otvori Google karte",
     form_label_name: "Ime i prezime",
     form_label_email: "E-mail adresa",
@@ -267,7 +279,7 @@ const translations = {
     whatsapp_opening: "OTVARANJE WHATSAPPA..."
   },
   de: {
-    "meta-title": "Villa Posija | Luxus-Steinvilla in Baška, Insel Krk",
+    "meta-title": "Villa Posija | Luxus-Steinvilla in Kras, Insel Krk",
     nav_about: "Über uns",
     nav_amenities: "Ausstattung",
     nav_gallery: "Galerie",
@@ -275,12 +287,12 @@ const translations = {
     nav_book_now: "Buchen",
     hero_subtitle: "Exklusiver Rückzugsort an der Adria",
     hero_title: "Wo Luxus auf den Horizont trifft",
-    hero_text: "Ein exquisites privates Refugium in Baška auf der Insel Krk, Kroatien. Die Villa Posija verbindet authentische Steinelemente mit modernem Luxus und bietet einen Panoramablick auf die Adria, einen beheizten Infinity-Pool und eine idyllische mediterrane Umgebung.",
+    hero_text: "Ein exquisites privates Refugium in Kras auf der Insel Krk, Kroatien. Die Villa Posija verbindet authentische Steinelemente mit modernem Luxus und bietet einen beheizten Pool, ländliche Privatsphäre und eine idyllische mediterrane Umgebung.",
     hero_cta_explore: "Villa erkunden",
     hero_cta_availability: "Verfügbarkeit prüfen",
     about_subtitle: "Das Anwesen",
     about_heading: "Authentische kroatische Steinarchitektur & moderner Komfort",
-    about_desc: "In der malerischen Küstenstadt Baška auf der Insel Krk gelegen, ist die Villa Posija ein Meisterwerk regionaler Architektur. Erbaut aus handgehauenem Stein, fügt sich die Villa harmonisch in die umliegenden Olivenhaine, Rosmarinsträucher und Hügel ein und bietet absolute Privatsphäre und einen traumhaften Meerblick.",
+    about_desc: "Im ruhigen Ort Kras auf der Insel Krk gelegen, ist die Villa Posija ein Meisterwerk regionaler Architektur. Erbaut aus handgehauenem Stein, fügt sich die Villa harmonisch in die Olivenhaine, Rosmarinsträucher und Natur der Insel ein und bietet absolute Privatsphäre und einen erholsamen Rückzugsort.",
     about_f1_title: "Authentisches Mauerwerk",
     about_f1_desc: "Traditionelle Architektur mit dicken Steinwänden sorgt für natürliche Kühlung und rustikale Eleganz.",
     about_f2_title: "Beheizter Infinity-Pool",
@@ -292,36 +304,42 @@ const translations = {
     about_cta: "Gästeservice kontaktieren",
     amenities_subtitle: "Erstklassiger Service",
     amenities_title: "Für Ihren vollendeten Komfort",
-    amenity_1_title: "Beheizter Infinity-Pool",
-    amenity_1_desc: "Beheizter Pool mit Blick auf die Adria, ausgestattet mit Hydromassagedüsen und einer großen Terrasse.",
-    amenity_2_title: "Highspeed-WLAN",
-    amenity_2_desc: "Schnelles Gigabit-WLAN im gesamten Innen- und Außenbereich, auf allen Terrassen und im Garten.",
-    amenity_3_title: "Klimaanlage",
-    amenity_3_desc: "Leise, voll integrierte Klimaanlage in allen Suiten und Wohnräumen.",
-    amenity_4_title: "Sicherer Privatparkplatz",
-    amenity_4_desc: "Gesicherter Parkplatz auf dem Gelände hinter elektrischen Toren mit Videoüberwachung.",
-    amenity_5_title: "Grill & Essterrasse",
-    amenity_5_desc: "Authentischer Steinkamin, Außenküche und gemütliche Pergola für Mahlzeiten im Freien.",
-    amenity_6_title: "Wellness & Sauna",
-    amenity_6_desc: "Exklusiver Wellnessbereich mit finnischer Sauna, Dampfdusche und Massagebereich.",
+    amenity_1_title: "Außenpool",
+    amenity_1_desc: "Schöner beheizter Infinity-Außenpool mit kristallklarem Wasser und einer großen Sonnenterrasse.",
+    amenity_2_title: "BBQ-Bereich im Freien",
+    amenity_2_desc: "Authentischer Steinkamin, Außenküche und gemütlicher Essplatz für Mahlzeiten im Freien.",
+    amenity_3_title: "Gemeinschaftsraum",
+    amenity_3_desc: "Ein gemütlicher Gemeinschaftsbereich für Entspannung, gesellige Stunden und gemeinsame Aktivitäten.",
+    amenity_4_title: "Klimaanlage",
+    amenity_4_desc: "Leise, voll integrierte moderne Klimaanlage in allen Räumen für optimalen Komfort.",
+    amenity_5_title: "Kostenloses WLAN",
+    amenity_5_desc: "Schnelles Gigabit-WLAN im gesamten Innen- und Außenbereich der Villa ohne Unterbrechungen.",
+    amenity_6_title: "Gesicherter Privatparkplatz",
+    amenity_6_desc: "Sicherer privater Parkplatz auf dem Gelände hinter elektrischen Toren mit Videoüberwachung.",
     gallery_subtitle: "Visuelle Pracht",
     gallery_title: "Erleben Sie die Villa Posija",
-    gallery_filter_all: "Alle Fotos",
-    gallery_filter_interior: "Innenbereich",
     gallery_filter_exterior: "Außenbereich",
-    gallery_filter_pool: "Pool / Spa",
+    gallery_filter_interior: "Innenbereich",
     gallery_cat_exterior: "Außenbereich",
-    gallery_t1: "Villa-Fassade bei Sonnenuntergang",
     gallery_cat_interior: "Innenbereich",
-    gallery_t2: "Großzügiger Wohnbereich",
-    gallery_cat_pool: "Pool / Spa",
-    gallery_t3: "Infinity-Pool an der Klippe",
-    gallery_t4: "Master-Suite Refugium",
-    gallery_t5: "Terrasse für Mahlzeiten",
-    gallery_t6: "Private finnische Sauna",
-    gallery_t7: "Gemütlicher Steinkamin",
-    gallery_t8: "Infinity-Pool bei Nacht",
-    gallery_t9: "Mediterraner Garten am Abend",
+    gallery_t_pool: "Beheizter Infinity-Pool",
+    gallery_t_bbq: "Grill- & Essbereich",
+    gallery_t_facade: "Villen-Fassade bei Sonnenuntergang",
+    gallery_t_balcony: "Balkonaussicht",
+    gallery_t_guvno: "Traditioneller Steinkreis (Guvno)",
+    gallery_t_playground: "Spielplatz & Sportbereich",
+    gallery_t_kitchen: "Gourmet-Küche",
+    gallery_t_dining: "Eleganter Essbereich",
+    gallery_t_living: "Luxuriöses Wohnzimmer",
+    gallery_t_entertainment: "Freizeit- & Unterhaltungsraum",
+    gallery_t_soba1: "Master-Suite",
+    gallery_t_soba2: "Deluxe Schlafzimmer 2",
+    gallery_t_soba3: "Premium Schlafzimmer 3",
+    gallery_t_soba4: "Gästezimmer 4",
+    gallery_t_wc1: "Badezimmer 1",
+    gallery_t_wc2: "Badezimmer 2",
+    gallery_t_wc3: "Badezimmer 3",
+    gallery_t_wc4: "Badezimmer 4",
     btn_view_more: "Mehr anzeigen",
     btn_view_less: "Weniger anzeigen",
     faq_subtitle: "Häufige Fragen",
@@ -336,12 +354,12 @@ const translations = {
     faq_a4: "Ja, um ein exklusives Urlaubserlebnis zu gewährleisten, gilt in der Villa Posija ein Mindestaufenthalt von 7 Nächten. Buchungen können direkt über den Belegungskalender vorgenommen und per WhatsApp-Anfrage bestätigt werden.",
     contact_subtitle: "Anfragen",
     contact_heading: "Beginnen Sie Ihre Reise",
-    contact_desc: "Kontaktieren Sie unser Gäteservice-Team, um Reservierungen vorzunehmen, Ihre Reiseroute zu planen oder VIP-Services zu buchen.",
+    contact_desc: "Kontaktieren Sie unser Gäteservice-Team, um Reservierungen vorzunehmen, Ihre Reiseroute zu planen oder VIP-Services in Kras, Krk zu buchen.",
     contact_lbl_location: "Standort",
     contact_lbl_reservations: "Buchungen",
     contact_lbl_email: "E-Mail-Adresse",
     map_title: "Finden Sie die Villa Posija",
-    map_sub: "Küste von Baška, Insel Krk, Kroatien",
+    map_sub: "Kras, Insel Krk, Kroatien",
     map_btn: "In Google Maps öffnen",
     form_label_name: "Vollständiger Name",
     form_label_email: "E-Mail-Adresse",
@@ -387,7 +405,7 @@ const translations = {
     whatsapp_opening: "WHATSAPP WIRD GEÖFFNET..."
   },
   it: {
-    "meta-title": "Villa Posija | Villa di lusso in pietra a Baška, isola di Krk",
+    "meta-title": "Villa Posija | Villa di lusso in pietra a Kras, isola di Krk",
     nav_about: "La villa",
     nav_amenities: "Servizi",
     nav_gallery: "Galleria",
@@ -395,12 +413,12 @@ const translations = {
     nav_book_now: "Prenota",
     hero_subtitle: "Fuga esclusiva sull'Adriatico",
     hero_title: "Dove il lusso incontra l'orizzonte",
-    hero_text: "Un rifugio privato esclusivo situato a Baška, sull'isola di Krk, in Croazia. Unendo l'autentica architettura in pietra al design moderno, Villa Posija offre una vista panoramica sul mare, una piscina a sfioro riscaldata e una natura incontaminata.",
+    hero_text: "Un rifugio privato esclusivo situato a Kras, sull'isola di Krk, in Croazia. Unendo l'autentica architettura in pietra al design moderno, Villa Posija offre una piscina riscaldata, massima privacy e una natura incontaminata.",
     hero_cta_explore: "Esplora la villa",
     hero_cta_availability: "Verifica disponibilità",
     about_subtitle: "Il rifugio",
     about_heading: "Autentica architettura in pietra croata e comfort contemporaneo",
-    about_desc: "Situata nella splendida città costiera di Baška, sull'isola di Krk, Villa Posija rappresenta un capolavoro di architettura locale. Costruita con pietra locale scolpita a mano, la villa si integra perfettamente tra uliveti d'argento, rosmarino selvatico e colline rocciose, offrendo privacy assoluta e vista sul mare.",
+    about_desc: "Situata nel tranquillo villaggio di Kras, sull'isola di Krk, Villa Posija rappresenta un capolavoro di architettura locale. Costruita con pietra locale scolpita a mano, la villa si integra perfettamente tra uliveti d'argento, rosmarino selvatico e natura rilassante dell'isola.",
     about_f1_title: "Pietra autentica",
     about_f1_desc: "La tradizionale architettura in pietra garantisce isolamento termico naturale ed eleganza rustica.",
     about_f2_title: "Piscina a sfioro riscaldata",
@@ -412,36 +430,42 @@ const translations = {
     about_cta: "Contatta il servizio ospiti",
     amenities_subtitle: "Servizi esclusivi",
     amenities_title: "Creato per il vostro comfort",
-    amenity_1_title: "Piscina a sfioro riscaldata",
-    amenity_1_desc: "Piscina riscaldata con vista sul mare, dotata di idromassaggio e ampio solarium.",
-    amenity_2_title: "Wi-Fi ad alta velocità",
-    amenity_2_desc: "Connessione Wi-Fi gigabit in tutta la villa, sulle terrazze, a bordo piscina e nel giardino.",
-    amenity_3_title: "Aria condizionata",
-    amenity_3_desc: "Impianto di climatizzazione silenzioso e integrato in tutte le suite e zone giorno.",
-    amenity_4_title: "Parcheggio privato sicuro",
-    amenity_4_desc: "Parcheggio privato recintato con cancello elettrico e videosorveglianza attiva.",
-    amenity_5_title: "Barbecue & zona pranzo",
-    amenity_5_desc: "Caminetto in pietra, cucina esterna e ampio pergolato per pranzi e cene all'aperto.",
-    amenity_6_title: "Wellness & sauna",
-    amenity_6_desc: "Area benessere privata con sauna finlandese, doccia emozionale e angolo massaggi.",
+    amenity_1_title: "Piscina all'aperto",
+    amenity_1_desc: "Splendida piscina riscaldata a sfioro con acqua cristallina e spaziosa terrazza solarium.",
+    amenity_2_title: "Zona BBQ all'aperto",
+    amenity_2_desc: "Caminetto in pietra, cucina esterna integrata e zona pranzo ideale per cene all'aperto.",
+    amenity_3_title: "Sala comune",
+    amenity_3_desc: "Uno spazio comune accogliente pensato per il relax, la socializzazione e il divertimento.",
+    amenity_4_title: "Aria condizionata",
+    amenity_4_desc: "Impianto di climatizzazione silenzioso in tutte le camere per garantire il massimo comfort.",
+    amenity_5_title: "Wi-Fi gratuito",
+    amenity_5_desc: "Connessione Wi-Fi ad alta velocità in tutta la proprietà, inclusi giardino e piscina.",
+    amenity_6_title: "Parcheggio privato sicuro",
+    amenity_6_desc: "Parcheggio custodito gratuito all'interno della proprietà con cancello elettrico e videosorveglianza.",
     gallery_subtitle: "Splendore visivo",
     gallery_title: "Scoprite Villa Posija",
-    gallery_filter_all: "Tutte le foto",
-    gallery_filter_interior: "Interni",
     gallery_filter_exterior: "Esterni",
-    gallery_filter_pool: "Piscina / Spa",
+    gallery_filter_interior: "Interni",
     gallery_cat_exterior: "Esterni",
-    gallery_t1: "Facciata della villa al tramonto",
     gallery_cat_interior: "Interni",
-    gallery_t2: "Ampio soggiorno",
-    gallery_cat_pool: "Piscina / Spa",
-    gallery_t3: "Piscina a sfioro sulla scogliera",
-    gallery_t4: "Master suite rifugio",
-    gallery_t5: "Terrazza per pranzi all'aperto",
-    gallery_t6: "Sauna finlandese privata",
-    gallery_t7: "Caminetto in pietra accogliente",
-    gallery_t8: "Piscina a sfioro di notte",
-    gallery_t9: "Giardino mediterraneo di sera",
+    gallery_t_pool: "Piscina a sfioro riscaldata",
+    gallery_t_bbq: "Area barbecue & pranzo",
+    gallery_t_facade: "Facciata della villa al tramonto",
+    gallery_t_balcony: "Vista dal balcone",
+    gallery_t_guvno: "Cerchio di pietra tradizionale (Guvno)",
+    gallery_t_playground: "Parco giochi e area sportiva",
+    gallery_t_kitchen: "Cucina gourmet",
+    gallery_t_dining: "Elegante sala da pranzo",
+    gallery_t_living: "Soggiorno di lusso",
+    gallery_t_entertainment: "Sala da svago e intrattenimento",
+    gallery_t_soba1: "Master suite",
+    gallery_t_soba2: "Camera da letto Deluxe 2",
+    gallery_t_soba3: "Camera da letto Premium 3",
+    gallery_t_soba4: "Camera degli ospiti 4",
+    gallery_t_wc1: "Bagno in camera 1",
+    gallery_t_wc2: "Bagno in camera 2",
+    gallery_t_wc3: "Bagno in camera 3",
+    gallery_t_wc4: "Bagno in camera 4",
     btn_view_more: "Mostra altro",
     btn_view_less: "Mostra meno",
     faq_subtitle: "Domande frequenti",
@@ -456,12 +480,12 @@ const translations = {
     faq_a4: "Sì, per offrire un'esperienza esclusiva, Villa Posija richiede un soggiorno minimo di 7 notti. Le prenotazioni possono essere effettuate tramite il calendario delle disponibilità e confermate via WhatsApp.",
     contact_subtitle: "Richieste",
     contact_heading: "Iniziate il vostro viaggio",
-    contact_desc: "Contattate il nostro team dedicato per prenotare il vostro soggiorno, personalizzare il vostro itinerario o richiedere servizi VIP.",
+    contact_desc: "Contattate il nostro team dedicato per prenotare il vostro soggiorno, personalizzare il vostro itinerario o richiedere servizi VIP a Kras, Krk.",
     contact_lbl_location: "Posizione",
     contact_lbl_reservations: "Prenotazioni",
     contact_lbl_email: "Indirizzo e-mail",
     map_title: "Trovate Villa Posija",
-    map_sub: "Costa di Baška, Isola di Krk, Croazia",
+    map_sub: "Kras, Isola di Krk, Croazia",
     map_btn: "Apri Google Maps",
     form_label_name: "Nome completo",
     form_label_email: "Indirizzo e-mail",
@@ -491,6 +515,7 @@ const translations = {
     footer_link_about: "La Villa",
     footer_link_amenities: "Servizi esclusivi",
     footer_link_gallery: "Galleria fotografica",
+    footer_link_contact: "Contatto / Prenotazione",
     footer_connect_hdr: "Rimani connesso",
     footer_connect_desc: "Seguite i nostri profili social per ispirazioni di design e aggiornamenti sulla disponibilità.",
     footer_copy: "&copy; 2026 Villa Posija. Tutti i diritti riservati.",
@@ -503,6 +528,7 @@ const translations = {
     past_date: "Data passata",
     booked_date: "Data prenotata",
     months: ['Gennaio', 'Febbraio', 'Marzo', 'Aprile', 'Maggio', 'Giugno', 'Luglio', 'Agosto', 'Settembre', 'Ottobre', 'Novembre', 'Dicembre'],
+    whatsapp_opening: "APERTURA WHATSAPP..."
   }
 };
 
@@ -597,13 +623,215 @@ document.addEventListener('DOMContentLoaded', () => {
   // 3. FILTERABLE PHOTO GALLERY & VIEW MORE LIMITS
   // ------------------------------------------------------------------------
   const filterBtns = document.querySelectorAll('.filter-btn');
-  const galleryItems = document.querySelectorAll('.gallery-item');
+  let galleryItems = [];
   const viewMoreBtn = document.getElementById('viewMoreBtn');
   let isGalleryExpanded = false;
 
+  // Dynamic gallery image objects array matching renamed files
+  const galleryData = [
+    {
+      src: './images/vanjski_dio_kuce_bazen.jpg',
+      alt: 'Villa Posija Infinity Pool',
+      category: 'exterior',
+      categoryName: 'Exterior',
+      catTranslateKey: 'gallery_cat_exterior',
+      title: 'Heated Infinity Pool',
+      titleTranslateKey: 'gallery_t_pool'
+    },
+    {
+      src: './images/vanjski_dio_kuce_rostilj.jpg',
+      alt: 'Villa Posija BBQ and Dining',
+      category: 'exterior',
+      categoryName: 'Exterior',
+      catTranslateKey: 'gallery_cat_exterior',
+      title: 'Barbecue & Dining Pergola',
+      titleTranslateKey: 'gallery_t_bbq'
+    },
+    {
+      src: './images/hero_villa.png',
+      alt: 'Villa Posija Facade at Sunset',
+      category: 'exterior',
+      categoryName: 'Exterior',
+      catTranslateKey: 'gallery_cat_exterior',
+      title: 'Villa Facade at Sunset',
+      titleTranslateKey: 'gallery_t_facade'
+    },
+    {
+      src: './images/vanjski_dio_kuce_balkon.jpg',
+      alt: 'Villa Posija Balcony View',
+      category: 'exterior',
+      categoryName: 'Exterior',
+      catTranslateKey: 'gallery_cat_exterior',
+      title: 'Scenic Balcony View',
+      titleTranslateKey: 'gallery_t_balcony'
+    },
+    {
+      src: './images/vanjski_dio_kuce_guvno.jpg',
+      alt: 'Villa Posija Traditional Stone Guvno',
+      category: 'exterior',
+      categoryName: 'Exterior',
+      catTranslateKey: 'gallery_cat_exterior',
+      title: 'Traditional Stone Circle (Guvno)',
+      titleTranslateKey: 'gallery_t_guvno'
+    },
+    {
+      src: './images/vanjski_dio_kuce_igraliste.jpg',
+      alt: 'Villa Posija Playground and Sport Field',
+      category: 'exterior',
+      categoryName: 'Exterior',
+      catTranslateKey: 'gallery_cat_exterior',
+      title: 'Playground & Sports Area',
+      titleTranslateKey: 'gallery_t_playground'
+    },
+    {
+      src: './images/unutranji_dio_kuce_kuhinja.jpg',
+      alt: 'Villa Posija Kitchen Area',
+      category: 'interior',
+      categoryName: 'Interior',
+      catTranslateKey: 'gallery_cat_interior',
+      title: 'Fully Equipped Kitchen',
+      titleTranslateKey: 'gallery_t_kitchen'
+    },
+    {
+      src: './images/unutarnji_dio_kuce_blagavaonica.jpg',
+      alt: 'Villa Posija Dining Area',
+      category: 'interior',
+      categoryName: 'Interior',
+      catTranslateKey: 'gallery_cat_interior',
+      title: 'Elegant Dining Area',
+      titleTranslateKey: 'gallery_t_dining'
+    },
+    {
+      src: './images/unutarnji_dio_kuce_dnevni_boravak.jpg',
+      alt: 'Villa Posija Living Room',
+      category: 'interior',
+      categoryName: 'Interior',
+      catTranslateKey: 'gallery_cat_interior',
+      title: 'Grand Living Room',
+      titleTranslateKey: 'gallery_t_living'
+    },
+    {
+      src: './images/unutarnji_dio_kuce_soba_za_razonodu.jpg',
+      alt: 'Villa Posija Entertainment Room',
+      category: 'interior',
+      categoryName: 'Interior',
+      catTranslateKey: 'gallery_cat_interior',
+      title: 'Entertainment Room',
+      titleTranslateKey: 'gallery_t_entertainment'
+    },
+    {
+      src: './images/unutarnji_dio_kuce_soba1.jpg',
+      alt: 'Villa Posija Master Bedroom',
+      category: 'interior',
+      categoryName: 'Interior',
+      catTranslateKey: 'gallery_cat_interior',
+      title: 'Master Suite',
+      titleTranslateKey: 'gallery_t_soba1'
+    },
+    {
+      src: './images/unutarnji_dio_kuce_soba2.jpg',
+      alt: 'Villa Posija Deluxe Room 2',
+      category: 'interior',
+      categoryName: 'Interior',
+      catTranslateKey: 'gallery_cat_interior',
+      title: 'Deluxe Bedroom 2',
+      titleTranslateKey: 'gallery_t_soba2'
+    },
+    {
+      src: './images/unutarnji_dio_kuce_soba3.jpg',
+      alt: 'Villa Posija Premium Room 3',
+      category: 'interior',
+      categoryName: 'Interior',
+      catTranslateKey: 'gallery_cat_interior',
+      title: 'Premium Bedroom 3',
+      titleTranslateKey: 'gallery_t_soba3'
+    },
+    {
+      src: './images/unutarnji_dio_kuce_soba4.jpg',
+      alt: 'Villa Posija Cozy Room 4',
+      category: 'interior',
+      categoryName: 'Interior',
+      catTranslateKey: 'gallery_cat_interior',
+      title: 'Cozy Guest Room 4',
+      titleTranslateKey: 'gallery_t_soba4'
+    },
+    {
+      src: './images/unutarnji_dio_kuce_wc1.jpg',
+      alt: 'Villa Posija Bathroom 1',
+      category: 'interior',
+      categoryName: 'Interior',
+      catTranslateKey: 'gallery_cat_interior',
+      title: 'En-suite Bathroom 1',
+      titleTranslateKey: 'gallery_t_wc1'
+    },
+    {
+      src: './images/unutarnji_dio_kuce_wc2.jpg',
+      alt: 'Villa Posija Bathroom 2',
+      category: 'interior',
+      categoryName: 'Interior',
+      catTranslateKey: 'gallery_cat_interior',
+      title: 'En-suite Bathroom 2',
+      titleTranslateKey: 'gallery_t_wc2'
+    },
+    {
+      src: './images/unutarnji_dio_kuce_wc3.jpg',
+      alt: 'Villa Posija Bathroom 3',
+      category: 'interior',
+      categoryName: 'Interior',
+      catTranslateKey: 'gallery_cat_interior',
+      title: 'En-suite Bathroom 3',
+      titleTranslateKey: 'gallery_t_wc3'
+    },
+    {
+      src: './images/unutarnji_dio_kuce_wc4.jpg',
+      alt: 'Villa Posija Bathroom 4',
+      category: 'interior',
+      categoryName: 'Interior',
+      catTranslateKey: 'gallery_cat_interior',
+      title: 'En-suite Bathroom 4',
+      titleTranslateKey: 'gallery_t_wc4'
+    }
+  ];
+
+  function renderGallery() {
+    const galleryGrid = document.getElementById('dynamicGallery');
+    if (!galleryGrid) return;
+
+    galleryGrid.innerHTML = '';
+
+    galleryData.forEach((item, index) => {
+      const itemHtml = `
+        <div class="gallery-item visible" data-category="${item.category}" data-index="${index}">
+          <img src="${item.src}" alt="${item.alt}" class="gallery-img" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-info">
+              <span class="gallery-category" data-translate="${item.catTranslateKey}">${item.categoryName}</span>
+              <h3 class="gallery-title" data-translate="${item.titleTranslateKey}">${item.title}</h3>
+            </div>
+            <div class="gallery-icon-view" style="align-self: flex-end; margin-top: auto;">
+              <i class="fa-solid fa-expand"></i>
+            </div>
+          </div>
+        </div>
+      `;
+      galleryGrid.insertAdjacentHTML('beforeend', itemHtml);
+    });
+
+    // Update reference to galleryItems
+    galleryItems = document.querySelectorAll('.gallery-item');
+
+    // Bind event listeners for lightbox
+    galleryItems.forEach((item) => {
+      item.addEventListener('click', () => {
+        const index = parseInt(item.getAttribute('data-index'));
+        openLightbox(index);
+      });
+    });
+  }
+
   function updateGalleryVisibility() {
     const activeFilterBtn = document.querySelector('.filter-btn.active');
-    const filterValue = activeFilterBtn ? activeFilterBtn.getAttribute('data-filter') : 'all';
+    const filterValue = activeFilterBtn ? activeFilterBtn.getAttribute('data-filter') : 'exterior';
     
     // Determine columns based on window width
     const width = window.innerWidth;
@@ -751,12 +979,6 @@ document.addEventListener('DOMContentLoaded', () => {
     currentGalleryIndex = (currentGalleryIndex + 1) % activeGalleryItems.length;
     updateLightboxContent();
   };
-
-  galleryItems.forEach((item, index) => {
-    item.addEventListener('click', () => {
-      openLightbox(index);
-    });
-  });
 
   if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
   if (lightboxPrev) lightboxPrev.addEventListener('click', prevImage);
@@ -1192,13 +1414,13 @@ END:VCALENDAR`;
       // WhatsApp Dynamic Messaging
       let messageText = "";
       if (currentLang === 'hr') {
-        messageText = `Pozdrav! Želim rezervirati Villu Posija u Baški u terminu od ${checkInStr} do ${checkOutStr}. Jesu li ovi termini slobodni za direktnu rezervaciju?`;
+        messageText = `Pozdrav! Želim rezervirati Villu Posija u Krasu na Krku u terminu od ${checkInStr} do ${checkOutStr}. Jesu li ovi termini slobodni za direktnu rezervaciju?`;
       } else if (currentLang === 'de') {
-        messageText = `Hallo! Ich möchte die Villa Posija in Baška vom ${checkInStr} bis zum ${checkOutStr} buchen. Sind diese Termine für eine direkte Buchung frei?`;
+        messageText = `Hallo! Ich möchte die Villa Posija in Kras (Insel Krk) vom ${checkInStr} bis zum ${checkOutStr} buchen. Sind diese Termine für eine direkte Buchung frei?`;
       } else if (currentLang === 'it') {
-        messageText = `Ciao! Vorrei prenotare Villa Posija a Baška dal ${checkInStr} al ${checkOutStr}. Questi giorni sono disponibili per una prenotazione diretta?`;
+        messageText = `Ciao! Vorrei prenotare Villa Posija a Kras dal ${checkInStr} al ${checkOutStr}. Questi giorni sono disponibili per una prenotazione diretta?`;
       } else {
-        messageText = `Hello! I would like to book Villa Posija in Baška from ${checkInStr} to ${checkOutStr}. Are these dates available for a direct booking?`;
+        messageText = `Hello! I would like to book Villa Posija in Kras (Krk Island) from ${checkInStr} to ${checkOutStr}. Are these dates available for a direct booking?`;
       }
 
       const waUrl = `https://wa.me/385994111894?text=${encodeURIComponent(messageText)}`;
@@ -1381,6 +1603,7 @@ END:VCALENDAR`;
     }
   }
 
+  renderGallery();
   setLanguage(initialLang);
   updateGalleryVisibility();
 });
