@@ -420,6 +420,12 @@
         <div class="reveal reveal-right">
           <form class="contact-form" id="contactForm" novalidate>
 
+            <!-- Honeypot Anti-Spam Field -->
+            <div class="honeypot-field" style="display:none !important; visibility:hidden !important;">
+                <label>Bot Trap:</label>
+                <input type="text" name="villa_posija_honey" id="villaPosijaHoney" autocomplete="off">
+            </div>
+
             <!-- Name Input -->
             <div class="form-group">
               <input type="text" id="formName" class="form-input" required>

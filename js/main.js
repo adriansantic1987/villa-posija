@@ -1362,6 +1362,14 @@ END:VCALENDAR`;
 
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
+      // Honeypot check
+      const honeyField = document.getElementById('villaPosijaHoney');
+      if (honeyField && honeyField.value !== '') {
+        console.warn("SPAM DETECTED: Form submission blocked by Honeypot.");
+        e.preventDefault();
+        return;
+      }
+
       e.preventDefault();
 
       let isValid = true;
