@@ -503,6 +503,10 @@ button {
 /* ==========================================================================
    ABOUT SECTION
    ========================================================================== */
+#about {
+  padding: 4rem 0;
+}
+
 .about-grid {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
@@ -609,77 +613,6 @@ button {
   left: 25%;
   z-index: 1;
   opacity: 0.3;
-}
-
-/* ==========================================================================
-   PREMIUM AMENITIES
-   ========================================================================== */
-.amenities {
-  background-color: var(--bg-secondary);
-}
-
-.amenities-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
-}
-
-.amenity-card {
-  background-color: var(--bg-card);
-  padding: 3.5rem 2.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.03);
-  text-align: center;
-  transition: var(--transition-smooth);
-  position: relative;
-  overflow: hidden;
-}
-
-.amenity-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: var(--color-gold);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.amenity-card:hover {
-  transform: translateY(-10px);
-  border-color: rgba(197, 168, 128, 0.25);
-  box-shadow: var(--shadow-premium);
-}
-
-.amenity-card:hover::before {
-  transform: scaleX(1);
-}
-
-.amenity-icon {
-  font-size: 2.5rem;
-  color: var(--color-gold);
-  margin-bottom: 2rem;
-  transition: var(--transition-smooth);
-  display: inline-block;
-}
-
-.amenity-card:hover .amenity-icon {
-  transform: scale(1.1);
-  color: var(--color-gold-light);
-}
-
-.amenity-title {
-  font-size: 1.3rem;
-  margin-bottom: 1rem;
-  letter-spacing: 0.05em;
-}
-
-.amenity-desc {
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-  line-height: 1.6;
 }
 
 
@@ -1587,6 +1520,10 @@ textarea.form-input {
     padding: 6rem 0;
   }
 
+  #about {
+    padding: 3rem 0;
+  }
+
   .hero-title {
     font-size: 4rem;
   }
@@ -1601,11 +1538,6 @@ textarea.form-input {
     max-width: 550px;
     margin: 0 auto;
     width: 100%;
-  }
-
-  .amenities-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
   }
 
   .gallery-grid {
@@ -1684,10 +1616,6 @@ textarea.form-input {
     width: 100%;
   }
 
-  .amenities-grid {
-    grid-template-columns: 1fr;
-  }
-
   .gallery-filters {
     flex-wrap: wrap;
     gap: 1rem;
@@ -1738,6 +1666,10 @@ textarea.form-input {
 @media (max-width: 480px) {
   .section {
     padding: 5rem 0;
+  }
+
+  #about {
+    padding: 2.5rem 0;
   }
 
   .section-title {
@@ -1943,10 +1875,6 @@ textarea.form-input {
 .light-theme .about-img-main,
 .light-theme .about-img-sub {
   border: 1px solid rgba(197, 168, 128, 0.15);
-}
-
-.light-theme .amenity-card {
-  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .light-theme .gallery-item {
@@ -2345,41 +2273,6 @@ textarea.form-input {
   text-align: center;
 }
 
-/* --- Amenities Section Tag Badges --- */
-.amenity-features {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.8rem;
-  margin-top: 2rem;
-  justify-content: center;
-}
 
-.amenity-feature-tag {
-  font-size: 0.75rem;
-  font-weight: 500;
-  color: var(--color-gold);
-  background-color: rgba(197, 168, 128, 0.05);
-  border: 1px solid rgba(197, 168, 128, 0.15);
-  padding: 0.4rem 0.8rem;
-  border-radius: 20px;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  transition: var(--transition-fast);
-}
 
-.amenity-card:hover .amenity-feature-tag {
-  background-color: rgba(197, 168, 128, 0.12);
-  border-color: rgba(197, 168, 128, 0.35);
-  color: var(--color-gold-light);
-}
 
-.light-theme .amenity-feature-tag {
-  background-color: rgba(197, 168, 128, 0.08);
-  border-color: rgba(197, 168, 128, 0.2);
-}
-
-.light-theme .amenity-card:hover .amenity-feature-tag {
-  background-color: rgba(197, 168, 128, 0.15);
-  border-color: rgba(197, 168, 128, 0.4);
-}

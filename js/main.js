@@ -29,7 +29,6 @@ const translations = {
   en: {
     "meta-title": "Villa Posija | Luxury Stone Villa in Kras, Krk Island",
     nav_about: "About",
-    nav_amenities: "Amenities",
     nav_gallery: "Gallery",
     nav_contact: "Contact",
     nav_book_now: "Book Now",
@@ -41,29 +40,15 @@ const translations = {
     about_subtitle: "The Retreat",
     about_heading: "Authentic Croatian Stone Architecture & Contemporary Comfort",
     about_desc: "Located in the serene village of Kras on Krk Island, Villa Posija represents a masterclass in regional heritage design. Crafted using local hand-carved stone, the villa integrates seamlessly with the surrounding silver olive groves, wild rosemary bushes, and peaceful Mediterranean nature, offering absolute seclusion and a relaxing island getaway.",
-    about_f1_title: "Authentic Stone Masonry",
-    about_f1_desc: "Traditional thick stone wall architecture ensuring natural insulation and rustic coastal elegance.",
-    about_f2_title: "Heated Infinity Pool",
-    about_f2_desc: "Hovering over the coastline with integrated warm water climate regulation for year-round swims.",
-    about_f3_title: "Unrivaled Sea Views",
-    about_f3_desc: "Stunning vistas of the clear blue waters of the Adriatic and the nearby islands.",
-    about_f4_title: "Mediterranean Flora",
-    about_f4_desc: "Landscaped private estate featuring aromatic gardens with lavender, figs, and olive trees.",
+    about_f1_title: "Heated Infinity Pool & BBQ",
+    about_f1_desc: "Heated infinity pool with spacious sunbathing deck and authentic outdoor stone fireplace BBQ area.",
+    about_f2_title: "Authentic Social Room",
+    about_f2_desc: "A cozy communal space designed for relaxation, social gatherings, games, and shared moments.",
+    about_f3_title: "AC & Free Wi-Fi",
+    about_f3_desc: "Fully air-conditioned rooms and high-speed wireless internet access throughout the entire villa.",
+    about_f4_title: "Secured Private Parking",
+    about_f4_desc: "Safe and private on-site parking behind electric gates under active video surveillance.",
     about_cta: "Contact Guest Services",
-    amenities_subtitle: "World-Class Services",
-    amenities_title: "Curated For Complete Comfort",
-    amenity_1_title: "Outdoor Pool",
-    amenity_1_desc: "Beautiful custom outdoor heated infinity pool with crystal clear waters and spacious sunbathing deck.",
-    amenity_2_title: "Outdoor BBQ Zone",
-    amenity_2_desc: "Authentic outdoor stone fireplace, built-in kitchen, and spacious dining area for memorable outdoor meals.",
-    amenity_3_title: "Common Lounge Room",
-    amenity_3_desc: "A cozy communal space designed for relaxation, social gatherings, games, and shared moments.",
-    amenity_4_title: "Air Conditioning",
-    amenity_4_desc: "Silent, fully integrated modern air conditioning throughout all rooms for your complete comfort.",
-    amenity_5_title: "Free Wi-Fi",
-    amenity_5_desc: "High-speed mesh gigabit wireless internet access throughout the entire villa, garden, and pool area.",
-    amenity_6_title: "Secured Private Parking",
-    amenity_6_desc: "Safe and private on-site parking behind electric gates under active video surveillance.",
     gallery_subtitle: "Visual Splendor",
     gallery_title: "Experience Villa Posija",
     gallery_filter_exterior: "Exterior",
@@ -110,7 +95,6 @@ const translations = {
     map_sub: "Kras, Krk Island, Croatia",
     map_btn: "Open Google Maps",
     form_label_name: "Full Name",
-    form_label_email: "Email Address",
     calendar_label: "Select Availability / Dates",
     day_mon: "Mon",
     day_tue: "Tue",
@@ -135,7 +119,6 @@ const translations = {
     footer_nav_hdr: "Navigations",
     footer_link_home: "Home",
     footer_link_about: "About the Villa",
-    footer_link_amenities: "Premium Amenities",
     footer_link_gallery: "Photo Gallery",
     footer_link_contact: "Contact / Booking",
     footer_connect_hdr: "Stay Connected",
@@ -169,7 +152,6 @@ const translations = {
   hr: {
     "meta-title": "Villa Posija | Luksuzna kamena vila u Krasu, otok Krk",
     nav_about: "O vili",
-    nav_amenities: "Sadržaji",
     nav_gallery: "Galerija",
     nav_contact: "Kontakt",
     nav_book_now: "Rezerviraj",
@@ -181,29 +163,15 @@ const translations = {
     about_subtitle: "Utočište",
     about_heading: "Autentična hrvatska kamena arhitektura i suvremena udobnost",
     about_desc: "Smještena u mirnom mjestu Kras na otoku Krku, Villa Posija predstavlja remek-djelo regionalnog naslijeđa. Izgrađena od lokalnog, ručno klesanog kamena, vila se savršeno uklapa u okolne srebrne maslinike, grmove ružmarina i mirnu mediteransku prirodu, nudeći potpunu privatnost i opuštajući otočki odmor.",
-    about_f1_title: "Autentični kameni zidovi",
-    about_f1_desc: "Tradicionalna arhitektura s debelim kamenim zidovima pruža prirodnu izolaciju i rustikalnu eleganciju.",
-    about_f2_title: "Grijani preljevni bazen",
-    about_f2_desc: "Smješten iznad obale, s ugrađenim sustavom grijanja za toplo plivanje tijekom cijele godine.",
-    about_f3_title: "Prekrasan pogled na more",
-    about_f3_desc: "Zadivljujući pogled na kristalno plavo Jadransko more i obližnje otoke.",
-    about_f4_title: "Mediteranska flora",
-    about_f4_desc: "Uređeno privatno imanje s aromatičnim vrtovima prepunim lavande, smokava i maslina.",
+    about_f1_title: "Grijani preljevni bazen & BBQ",
+    about_f1_desc: "Grijani preljevni bazen s terasom za sunčanje i autentičnim kamenim kaminom za roštilj.",
+    about_f2_title: "Autentična soba za druženje",
+    about_f2_desc: "Udoban zajednički prostor namijenjen opuštanju, druženju, zabavi i zajedničkim trenucima.",
+    about_f3_title: "Klimatizirano & Besplatan Wi-Fi",
+    about_f3_desc: "Potpuno klimatizirane prostorije i brzi bežični internet dostupan na cijelom posjedu.",
+    about_f4_title: "Osiguran privatan parking",
+    about_f4_desc: "Siguran i besplatan privatni parking u sklopu objekta pod video nadzorom.",
     about_cta: "Kontaktirajte recepciju",
-    amenities_subtitle: "Usluge svjetske klase",
-    amenities_title: "Kreirano za potpunu udobnost",
-    amenity_1_title: "Vanjski bazen",
-    amenity_1_desc: "Prekrasan grijani preljevni bazen s kristalno čistom vodom i prostranom terasom za sunčanje.",
-    amenity_2_title: "Vanjska BBQ zona i roštilj",
-    amenity_2_desc: "Autentični kameni kamin, ugrađena vanjska kuhinja i stol za objedovanje na otvorenom.",
-    amenity_3_title: "Soba za druženje",
-    amenity_3_desc: "Udoban zajednički prostor namijenjen opuštanju, druženju, zabavi i zajedničkim trenucima.",
-    amenity_4_title: "Klima uređaj",
-    amenity_4_desc: "Tihi, potpuno integrirani klima uređaji u svim prostorijama za Vašu potpunu ugodu.",
-    amenity_5_title: "Besplatan Wi-Fi",
-    amenity_5_desc: "Brzi bežični internet dostupan na cijelom posjedu, uključujući terase, vrt i bazen.",
-    amenity_6_title: "Osiguran privatni parking",
-    amenity_6_desc: "Siguran i besplatan privatni parking u sklopu objekta pod video nadzorom.",
     gallery_subtitle: "Vizualni sjaj",
     gallery_title: "Doživite Villu Posija",
     gallery_filter_exterior: "Eksterijer",
@@ -250,7 +218,6 @@ const translations = {
     map_sub: "Kras, otok Krk, Hrvatska",
     map_btn: "Otvori Google karte",
     form_label_name: "Ime i prezime",
-    form_label_email: "E-mail adresa",
     calendar_label: "Odaberite slobodne termine",
     day_mon: "Pon",
     day_tue: "Uto",
@@ -275,7 +242,6 @@ const translations = {
     footer_nav_hdr: "Navigacija",
     footer_link_home: "Početna",
     footer_link_about: "O vili",
-    footer_link_amenities: "Sadržaji",
     footer_link_gallery: "Galerija slika",
     footer_link_contact: "Kontakt / Rezervacija",
     footer_connect_hdr: "Povežite se s nama",
@@ -309,7 +275,6 @@ const translations = {
   de: {
     "meta-title": "Villa Posija | Luxus-Steinvilla in Kras, Insel Krk",
     nav_about: "Über uns",
-    nav_amenities: "Ausstattung",
     nav_gallery: "Galerie",
     nav_contact: "Kontakt",
     nav_book_now: "Buchen",
@@ -321,29 +286,15 @@ const translations = {
     about_subtitle: "Das Anwesen",
     about_heading: "Authentische kroatische Steinarchitektur & moderner Komfort",
     about_desc: "Im ruhigen Ort Kras auf der Insel Krk gelegen, ist die Villa Posija ein Meisterwerk regionaler Architektur. Erbaut aus handgehauenem Stein, fügt sich die Villa harmonisch in die Olivenhaine, Rosmarinsträucher und Natur der Insel ein und bietet absolute Privatsphäre und einen erholsamen Rückzugsort.",
-    about_f1_title: "Authentisches Mauerwerk",
-    about_f1_desc: "Traditionelle Architektur mit dicken Steinwänden sorgt für natürliche Kühlung und rustikale Eleganz.",
-    about_f2_title: "Beheizter Infinity-Pool",
-    about_f2_desc: "Über der Küste schwebend, mit integrierter Heizung für angenehmes Schwimmen das ganze Jahr über.",
-    about_f3_title: "Traumhafter Meerblick",
-    about_f3_desc: "Atemberaubende Aussicht auf das kristallblaue Wasser der Adria und die benachbarten Inseln.",
-    about_f4_title: "Mediterrane Flora",
-    about_f4_desc: "Privates Anwesen mit duftenden Gärten voller Lavendel, Feigen- und Olivenbäumen.",
+    about_f1_title: "Beheizter Infinity-Pool & BBQ",
+    about_f1_desc: "Beheizter Infinity-Außenpool mit Sonnenterrasse und authentischem Steinkamin für Grillabende.",
+    about_f2_title: "Authentischer Gemeinschaftsraum",
+    about_f2_desc: "Ein gemütlicher Gemeinschaftsbereich für Entspannung, gesellige Stunden und gemeinsame Aktivitäten.",
+    about_f3_title: "Klimaanlage & Gratis WLAN",
+    about_f3_desc: "Klimatisierte Räume und schnelles WLAN im gesamten Innen- und Außenbereich der Villa.",
+    about_f4_title: "Gesicherter Privatparkplatz",
+    about_f4_desc: "Sicherer privater Parkplatz auf dem Gelände hinter elektrischen Toren mit Videoüberwachung.",
     about_cta: "Gästeservice kontaktieren",
-    amenities_subtitle: "Erstklassiger Service",
-    amenities_title: "Für Ihren vollendeten Komfort",
-    amenity_1_title: "Außenpool",
-    amenity_1_desc: "Schöner beheizter Infinity-Außenpool mit kristallklarem Wasser und einer großen Sonnenterrasse.",
-    amenity_2_title: "BBQ-Bereich im Freien",
-    amenity_2_desc: "Authentischer Steinkamin, Außenküche und gemütlicher Essplatz für Mahlzeiten im Freien.",
-    amenity_3_title: "Gemeinschaftsraum",
-    amenity_3_desc: "Ein gemütlicher Gemeinschaftsbereich für Entspannung, gesellige Stunden und gemeinsame Aktivitäten.",
-    amenity_4_title: "Klimaanlage",
-    amenity_4_desc: "Leise, voll integrierte moderne Klimaanlage in allen Räumen für optimalen Komfort.",
-    amenity_5_title: "Kostenloses WLAN",
-    amenity_5_desc: "Schnelles Gigabit-WLAN im gesamten Innen- und Außenbereich der Villa ohne Unterbrechungen.",
-    amenity_6_title: "Gesicherter Privatparkplatz",
-    amenity_6_desc: "Sicherer privater Parkplatz auf dem Gelände hinter elektrischen Toren mit Videoüberwachung.",
     gallery_subtitle: "Visuelle Pracht",
     gallery_title: "Erleben Sie die Villa Posija",
     gallery_filter_exterior: "Außenbereich",
@@ -390,7 +341,6 @@ const translations = {
     map_sub: "Kras, Insel Krk, Kroatien",
     map_btn: "In Google Maps öffnen",
     form_label_name: "Vollständiger Name",
-    form_label_email: "E-Mail-Adresse",
     calendar_label: "Reisedaten auswählen",
     day_mon: "Mo",
     day_tue: "Di",
@@ -415,7 +365,6 @@ const translations = {
     footer_nav_hdr: "Navigation",
     footer_link_home: "Startseite",
     footer_link_about: "Über die Villa",
-    footer_link_amenities: "Ausstattung",
     footer_link_gallery: "Fotogalerie",
     footer_link_contact: "Kontakt / Buchung",
     footer_connect_hdr: "Social Media",
@@ -449,7 +398,6 @@ const translations = {
   it: {
     "meta-title": "Villa Posija | Villa di lusso in pietra a Kras, isola di Krk",
     nav_about: "La villa",
-    nav_amenities: "Servizi",
     nav_gallery: "Galleria",
     nav_contact: "Contatto",
     nav_book_now: "Prenota",
@@ -461,29 +409,15 @@ const translations = {
     about_subtitle: "Il rifugio",
     about_heading: "Autentica architettura in pietra croata e comfort contemporaneo",
     about_desc: "Situata nel tranquillo villaggio di Kras, sull'isola di Krk, Villa Posija rappresenta un capolavoro di architettura locale. Costruita con pietra locale scolpita a mano, la villa si integra perfettamente tra uliveti d'argento, rosmarino selvatico e natura rilassante dell'isola.",
-    about_f1_title: "Pietra autentica",
-    about_f1_desc: "La tradizionale architettura in pietra garantisce isolamento termico naturale ed eleganza rustica.",
-    about_f2_title: "Piscina a sfioro riscaldata",
-    about_f2_desc: "Sospesa sulla costa, dotata di riscaldamento integrato per fare il bagno tutto l'anno.",
-    about_f3_title: "Splendida vista mare",
-    about_f3_desc: "Vista spettacolare sulle acque cristalline dell'Adriatico e sulle isole vicine.",
-    about_f4_title: "Flora mediterranea",
-    about_f4_desc: "Tenuta privata con giardini aromatici ricchi di lavanda, fichi e ulivi centenari.",
+    about_f1_title: "Piscina a sfioro riscaldata & BBQ",
+    about_f1_desc: "Piscina riscaldata a sfioro con terrazza solarium e caminetto in pietra per grigliate.",
+    about_f2_title: "Sala comune per la socializzazione",
+    about_f2_desc: "Uno spazio comune accogliente pensato per il relax, la socializzazione e il divertimento.",
+    about_f3_title: "Aria condizionata & Wi-Fi gratuito",
+    about_f3_desc: "Ambienti completamente climatizzati e connessione Wi-Fi ad alta velocità in tutta la proprietà.",
+    about_f4_title: "Parcheggio privato sicuro",
+    about_f4_desc: "Parcheggio custodito gratuito all'interno della proprietà con cancello elettrico e videosorveglianza.",
     about_cta: "Contatta il servizio ospiti",
-    amenities_subtitle: "Servizi esclusivi",
-    amenities_title: "Creato per il vostro comfort",
-    amenity_1_title: "Piscina all'aperto",
-    amenity_1_desc: "Splendida piscina riscaldata a sfioro con acqua cristallina e spaziosa terrazza solarium.",
-    amenity_2_title: "Zona BBQ all'aperto",
-    amenity_2_desc: "Caminetto in pietra, cucina esterna integrata e zona pranzo ideale per cene all'aperto.",
-    amenity_3_title: "Sala comune",
-    amenity_3_desc: "Uno spazio comune accogliente pensato per il relax, la socializzazione e il divertimento.",
-    amenity_4_title: "Aria condizionata",
-    amenity_4_desc: "Impianto di climatizzazione silenzioso in tutte le camere per garantire il massimo comfort.",
-    amenity_5_title: "Wi-Fi gratuito",
-    amenity_5_desc: "Connessione Wi-Fi ad alta velocità in tutta la proprietà, inclusi giardino e piscina.",
-    amenity_6_title: "Parcheggio privato sicuro",
-    amenity_6_desc: "Parcheggio custodito gratuito all'interno della proprietà con cancello elettrico e videosorveglianza.",
     gallery_subtitle: "Splendore visivo",
     gallery_title: "Scoprite Villa Posija",
     gallery_filter_exterior: "Esterni",
@@ -530,7 +464,6 @@ const translations = {
     map_sub: "Kras, Isola di Krk, Croazia",
     map_btn: "Apri Google Maps",
     form_label_name: "Nome completo",
-    form_label_email: "Indirizzo e-mail",
     calendar_label: "Seleziona le date del soggiorno",
     day_mon: "Lun",
     day_tue: "Mar",
@@ -555,7 +488,6 @@ const translations = {
     footer_nav_hdr: "Navigazione",
     footer_link_home: "Home",
     footer_link_about: "La Villa",
-    footer_link_amenities: "Servizi esclusivi",
     footer_link_gallery: "Galleria fotografica",
     footer_link_contact: "Contatto / Prenotazione",
     footer_connect_hdr: "Rimani connesso",
@@ -1079,30 +1011,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Custom mock iCal response representing real Booking.com blockages for testing and CORS fallback
   const getSimulatedICalFeed = () => {
-    const curYear = new Date().getFullYear();
-    const curMonthStr = String(new Date().getMonth() + 1).padStart(2, '0');
-    const nextMonthStr = String((new Date().getMonth() + 2) % 12 || 12).padStart(2, '0');
-    const nextMonthYear = new Date().getMonth() === 11 ? curYear + 1 : curYear;
-
-    return `BEGIN:VCALENDAR
+    let ical = `BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Booking.com//NONSGML Booking.com Calendar//EN
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:${curYear}${curMonthStr}24
-DTEND;VALUE=DATE:${curYear}${curMonthStr}30
+PRODID:-//Booking.com//NONSGML Booking.com Calendar//EN\n`;
+
+    const today = new Date();
+    for (let i = 0; i < 12; i++) {
+      const year = today.getFullYear() + Math.floor((today.getMonth() + i) / 12);
+      const month = (today.getMonth() + i) % 12;
+      const monthStr = String(month + 1).padStart(2, '0');
+
+      ical += `BEGIN:VEVENT
+DTSTART;VALUE=DATE:${year}${monthStr}08
+DTEND;VALUE=DATE:${year}${monthStr}15
 SUMMARY:Booked - Booking.com
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:${nextMonthYear}${nextMonthStr}06
-DTEND;VALUE=DATE:${nextMonthYear}${nextMonthStr}14
+END:VEVENT\n`;
+
+      if (i % 3 !== 0) {
+        ical += `BEGIN:VEVENT
+DTSTART;VALUE=DATE:${year}${monthStr}20
+DTEND;VALUE=DATE:${year}${monthStr}26
 SUMMARY:Booked - Booking.com
-END:VEVENT
-BEGIN:VEVENT
-DTSTART;VALUE=DATE:${nextMonthYear}${nextMonthStr}20
-DTEND;VALUE=DATE:${nextMonthYear}${nextMonthStr}27
-SUMMARY:Booked - Booking.com
-END:VEVENT
-END:VCALENDAR`;
+END:VEVENT\n`;
+      }
+    }
+
+    ical += `END:VCALENDAR`;
+    return ical;
   };
 
   // Regular expression based iCal parser
@@ -1243,6 +1178,16 @@ END:VCALENDAR`;
     } else {
       calendarPrevBtn.style.opacity = '1';
       calendarPrevBtn.style.pointerEvents = 'all';
+    }
+
+    const maxDate = new Date();
+    maxDate.setMonth(maxDate.getMonth() + 11);
+    if (currentCalYear > maxDate.getFullYear() || (currentCalYear === maxDate.getFullYear() && currentCalMonth >= maxDate.getMonth())) {
+      calendarNextBtn.style.opacity = '0.3';
+      calendarNextBtn.style.pointerEvents = 'none';
+    } else {
+      calendarNextBtn.style.opacity = '1';
+      calendarNextBtn.style.pointerEvents = 'all';
     }
   };
 
@@ -1475,16 +1420,35 @@ END:VCALENDAR`;
       const checkInStr = checkInDate.toLocaleDateString(locale, options);
       const checkOutStr = checkOutDate.toLocaleDateString(locale, options);
 
+      const fullName = document.getElementById('formName').value.trim();
+      const specialRequests = document.getElementById('formMessage').value.trim();
+
       // WhatsApp Dynamic Messaging
       let messageText = "";
       if (currentLang === 'hr') {
-        messageText = `Pozdrav! Želim rezervirati Villu Posija u Krasu na Krku u terminu od ${checkInStr} do ${checkOutStr}. Jesu li ovi termini slobodni za direktnu rezervaciju?`;
+        if (specialRequests) {
+          messageText = `Pozdrav! Želio bih poslati upit za rezervaciju Ville Posije u terminu od ${checkInStr} do ${checkOutStr}. Moji specijalni zahtjevi su: ${specialRequests}. Lijep pozdrav, ${fullName}!`;
+        } else {
+          messageText = `Pozdrav! Želio bih poslati upit za rezervaciju Ville Posije u terminu od ${checkInStr} do ${checkOutStr}. Lijep pozdrav, ${fullName}!`;
+        }
       } else if (currentLang === 'de') {
-        messageText = `Hallo! Ich möchte die Villa Posija in Kras (Insel Krk) vom ${checkInStr} bis zum ${checkOutStr} buchen. Sind diese Termine für eine direkte Buchung frei?`;
+        if (specialRequests) {
+          messageText = `Hallo! Ich möchte eine Buchungsanfrage für Villa Posija im Zeitraum von ${checkInStr} bis ${checkOutStr} senden. Meine Sonderwünsche sind: ${specialRequests}. Mit freundlichen Grüßen, ${fullName}!`;
+        } else {
+          messageText = `Hallo! Ich möchte eine Buchungsanfrage für Villa Posija im Zeitraum von ${checkInStr} bis ${checkOutStr} senden. Mit freundlichen Grüßen, ${fullName}!`;
+        }
       } else if (currentLang === 'it') {
-        messageText = `Ciao! Vorrei prenotare Villa Posija a Kras dal ${checkInStr} al ${checkOutStr}. Questi giorni sono disponibili per una prenotazione diretta?`;
+        if (specialRequests) {
+          messageText = `Ciao! Vorrei inviare una richiesta di prenotazione per Villa Posija dal ${checkInStr} al ${checkOutStr}. Le mie richieste speciali sono: ${specialRequests}. Cordiali saluti, ${fullName}!`;
+        } else {
+          messageText = `Ciao! Vorrei inviare una richiesta di prenotazione per Villa Posija dal ${checkInStr} al ${checkOutStr}. Cordiali saluti, ${fullName}!`;
+        }
       } else {
-        messageText = `Hello! I would like to book Villa Posija in Kras (Krk Island) from ${checkInStr} to ${checkOutStr}. Are these dates available for a direct booking?`;
+        if (specialRequests) {
+          messageText = `Hello! I would like to send a booking request for Villa Posija from ${checkInStr} to ${checkOutStr}. My special requests are: ${specialRequests}. Best regards, ${fullName}!`;
+        } else {
+          messageText = `Hello! I would like to send a booking request for Villa Posija from ${checkInStr} to ${checkOutStr}. Best regards, ${fullName}!`;
+        }
       }
 
       const waUrl = `https://wa.me/385994111894?text=${encodeURIComponent(messageText)}`;
