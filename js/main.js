@@ -863,7 +863,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Determine columns based on window width
     const width = window.innerWidth;
     let cols = 3;
-    if (width <= 768) {
+    if (width <= 480) {
       cols = 1;
     } else if (width <= 992) {
       cols = 2;
