@@ -2292,11 +2292,15 @@ textarea.form-input {
   }
 
   .lightbox-prev {
-    left: 0.5rem;
+    left: 1.25rem;
   }
 
   .lightbox-next {
-    right: 0.5rem;
+    right: 1.25rem;
+  }
+
+  .hero-content {
+    padding: 0 1.25rem;
   }
 }
 
@@ -2315,6 +2319,10 @@ textarea.form-input {
 /* Extra Small Mobile Devices (<480px) */
 @media (max-width: 480px) {
   .container {
+    padding: 0 1rem;
+  }
+
+  .hero-content {
     padding: 0 1rem;
   }
 
