@@ -2,3 +2,18 @@ node_modules/
 playwright-report/
 test-results/
 .playwright/
+
+# Local env and vercel configs
+.env
+.env.local
+.vercel/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
