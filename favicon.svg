@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Elegant dark background -->
+  <rect width="100" height="100" rx="22" fill="#111111" />
+  
+  <!-- Stylized traditional stone house silhouette in warm gold -->
+  <path d="M50 24 L82 48 L82 76 L18 76 L18 48 Z" fill="none" stroke="#d4af37" stroke-width="5" stroke-linejoin="round" />
+  
+  <!-- Traditional Mediterranean arched entryway -->
+  <path d="M42 76 V60 C42 54 58 54 58 60 V76" fill="none" stroke="#d4af37" stroke-width="5" stroke-linecap="round" />
+  
+  <!-- Symmetrical classic windows -->
+  <rect x="30" y="52" width="10" height="10" rx="2" fill="none" stroke="#d4af37" stroke-width="3" />
+  <rect x="60" y="52" width="10" height="10" rx="2" fill="none" stroke="#d4af37" stroke-width="3" />
+  
+  <!-- Simple olive branch leaf emblem above the roof representing peace and heritage -->
+  <path d="M50 11 C54 11 56 15 54 18 C52 21 48 18 50 11 Z" fill="#d4af37" />
+  <path d="M45 15 C41 13 38 17 41 20 C44 23 46 19 45 15 Z" fill="#d4af37" />
+  <path d="M55 15 C59 13 62 17 59 20 C56 23 54 19 55 15 Z" fill="#d4af37" />
+</svg>

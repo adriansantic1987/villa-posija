@@ -8,7 +8,7 @@
 
   <!-- Theme Flashing Prevention -->
   <script>
-    (function() {
+    (function () {
       const getCookie = (name) => {
         const value = `; ${document.cookie}`;
         const parts = value.split(`; ${name}=`);
@@ -35,6 +35,9 @@
     content="Indulge in an exclusive retreat at Villa Posija, featuring premium stone architecture, Mediterranean gardens, and a heated pool in Kras, Croatia.">
   <meta property="og:image" content="./images/hero_villa.png">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+
   <!-- FontAwesome v6 CDN for Modern Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -45,509 +48,546 @@
 <body>
   <div id="app" class="app-wrapper">
 
-  <!-- ==========================================================================
+    <!-- ==========================================================================
        STICKY NAVBAR
        ========================================================================== -->
-  <nav class="navbar" id="navbar">
-    <div class="container">
-      <a href="#hero" class="logo">
-        VILLA <span class="logo-gold">POSIJA</span>
-      </a>
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <a href="#hero" class="logo">
+          VILLA <span class="logo-gold">POSIJA</span>
+        </a>
 
-      <ul class="nav-links">
-        <li><a href="#about" class="nav-link" data-translate="nav_about">About</a></li>
-        <li><a href="#gallery" class="nav-link" data-translate="nav_gallery">Gallery</a></li>
-        <li><a href="#contact" class="nav-link" data-translate="nav_contact">Contact</a></li>
-      </ul>
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link" data-translate="nav_about">About</a></li>
+          <li><a href="#gallery" class="nav-link" data-translate="nav_gallery">Gallery</a></li>
+          <li><a href="#contact" class="nav-link" data-translate="nav_contact">Contact</a></li>
+        </ul>
 
-      <div class="navbar-controls">
-        <!-- Language Dropdown Switcher -->
-        <div class="lang-switcher">
-          <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false">
-            <i class="fa-solid fa-globe"></i> <span id="currentLang">EN</span> <i class="fa-solid fa-chevron-down" style="font-size: 0.6rem; margin-left: 2px;"></i>
+        <div class="navbar-controls">
+          <!-- Language Dropdown Switcher -->
+          <div class="lang-switcher">
+            <button class="lang-btn" id="langBtn" aria-haspopup="true" aria-expanded="false">
+              <i class="fa-solid fa-globe"></i> <span id="currentLang">EN</span> <i class="fa-solid fa-chevron-down"
+                style="font-size: 0.6rem; margin-left: 2px;"></i>
+            </button>
+            <ul class="lang-dropdown" id="langDropdown">
+              <li><a href="#" data-lang="en">EN</a></li>
+              <li><a href="#" data-lang="hr">HR</a></li>
+              <li><a href="#" data-lang="de">DE</a></li>
+              <li><a href="#" data-lang="it">IT</a></li>
+            </ul>
+          </div>
+
+          <!-- Theme Toggle -->
+          <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Theme">
+            <i class="fa-solid fa-moon dark-icon"></i>
+            <i class="fa-solid fa-sun light-icon"></i>
           </button>
-          <ul class="lang-dropdown" id="langDropdown">
-            <li><a href="#" data-lang="en">EN</a></li>
-            <li><a href="#" data-lang="hr">HR</a></li>
-            <li><a href="#" data-lang="de">DE</a></li>
-            <li><a href="#" data-lang="it">IT</a></li>
-          </ul>
         </div>
 
-        <!-- Theme Toggle -->
-        <button class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle Theme">
-          <i class="fa-solid fa-moon dark-icon"></i>
-          <i class="fa-solid fa-sun light-icon"></i>
-        </button>
-      </div>
+        <div class="navbar-cta">
+          <a href="#contact" class="btn btn-gold-outline" style="padding: 0.6rem 1.5rem; font-size: 0.75rem;"
+            data-translate="nav_book_now">Book Now</a>
+        </div>
 
-      <div class="navbar-cta">
-        <a href="#contact" class="btn btn-gold-outline" style="padding: 0.6rem 1.5rem; font-size: 0.75rem;" data-translate="nav_book_now">Book Now</a>
+        <div class="burger-menu" id="burgerMenu">
+          <div class="burger-line"></div>
+          <div class="burger-line"></div>
+          <div class="burger-line"></div>
+        </div>
       </div>
+    </nav>
 
-      <div class="burger-menu" id="burgerMenu">
-        <div class="burger-line"></div>
-        <div class="burger-line"></div>
-        <div class="burger-line"></div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- ==========================================================================
+    <!-- ==========================================================================
        HERO SECTION
        ========================================================================== -->
-  <header class="hero" id="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <span class="hero-subtitle" data-translate="hero_subtitle">Premium Adriatic Escape</span>
-      <h1 class="hero-title" data-translate="hero_title">A Modern Oasis of Peace and Luxury</h1>
-      <p class="hero-text" data-translate="hero_text">
-        Villa Posija offers a perfect blend of elegance, comfort, and complete privacy in the idyllic village of Kras. Enjoy beautiful nature far away from city noise.
-      </p>
-      <div class="hero-ctas">
-        <a href="#about" class="btn btn-primary" data-translate="hero_cta_explore">Explore Villa</a>
-        <a href="#contact" class="btn btn-outline" data-translate="hero_cta_availability">View Availability</a>
+    <header class="hero" id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="hero-subtitle" data-translate="hero_subtitle">Premium Adriatic Escape</span>
+        <h1 class="hero-title" data-translate="hero_title">A Modern Oasis of Peace and Luxury</h1>
+        <p class="hero-text" data-translate="hero_text">
+          Villa Posija offers a perfect blend of elegance, comfort, and complete privacy in the idyllic village of Kras.
+          Enjoy beautiful nature far away from city noise.
+        </p>
+        <div class="hero-ctas">
+          <a href="#about" class="btn btn-primary" data-translate="hero_cta_explore">Explore Villa</a>
+          <a href="#contact" class="btn btn-outline" data-translate="hero_cta_availability">View Availability</a>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- ==========================================================================
+    <!-- ==========================================================================
        ABOUT SECTION
        ========================================================================== -->
-  <section class="section" id="about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-text-content reveal reveal-left">
-        <span class="section-subtitle" data-translate="about_subtitle">The Retreat</span>
-        <h2 class="about-heading" data-translate="about_heading">Elegant Interior and Spacious Terrace</h2>
-        <p class="about-description" data-translate="about_desc">
-          The interior of Villa Posija focuses on high-end comfort. The bright living area features large panoramic doors leading directly to the terrace. The highlight of the outdoor space is the large private pool surrounded by comfortable loungers, perfect for summer relaxation.
-        </p>
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text-content reveal reveal-left">
+            <span class="section-subtitle" data-translate="about_subtitle">The Retreat</span>
+            <h2 class="about-heading" data-translate="about_heading">Elegant Interior and Spacious Terrace</h2>
+            <p class="about-description" data-translate="about_desc">
+              The interior of Villa Posija focuses on high-end comfort. The bright living area features large panoramic
+              doors leading directly to the terrace. The highlight of the outdoor space is the large private pool
+              surrounded by comfortable loungers, perfect for summer relaxation.
+            </p>
 
-        <div>
-          <a href="#contact" class="btn btn-gold-outline" data-translate="about_cta">Contact Us</a>
+            <div>
+              <a href="#contact" class="btn btn-gold-outline" data-translate="about_cta">Contact Us</a>
+            </div>
+          </div>
+
+          <div class="about-images-wrapper reveal reveal-right">
+            <div class="about-img-backdrop"></div>
+            <img src="./images/unutarnji_dio_kuce_dnevni_boravak.jpg" alt="Villa Posija Living Area"
+              class="about-img-main">
+            <img src="./images/unutarnji_dio_kuce_soba1.jpg" alt="Villa Posija Premium Room" class="about-img-sub">
+          </div>
         </div>
-      </div>
-
-      <div class="about-images-wrapper reveal reveal-right">
-        <div class="about-img-backdrop"></div>
-        <img src="./images/unutarnji_dio_kuce_dnevni_boravak.jpg" alt="Villa Posija Living Area" class="about-img-main">
-        <img src="./images/unutarnji_dio_kuce_soba1.jpg" alt="Villa Posija Premium Room" class="about-img-sub">
-      </div>
-    </div>
-  </section>
+    </section>
 
 
-  <!-- ==========================================================================
+    <!-- ==========================================================================
        INTERACTIVE GALLERY SECTION
        ========================================================================== -->
-  <section class="section" id="gallery">
-    <div class="container">
-      <div class="section-header reveal reveal-up">
-        <span class="section-subtitle" data-translate="gallery_subtitle">Visual Splendor</span>
-        <h2 class="section-title" data-translate="gallery_title">Experience Villa Posija</h2>
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-header reveal reveal-up">
+          <span class="section-subtitle" data-translate="gallery_subtitle">Visual Splendor</span>
+          <h2 class="section-title" data-translate="gallery_title">Experience Villa Posija</h2>
+        </div>
+
+        <div class="gallery-filters reveal reveal-up">
+          <span class="filter-btn active" data-filter="exterior"
+            data-translate="gallery_filter_exterior">Exterior</span>
+          <span class="filter-btn" data-filter="interior" data-translate="gallery_filter_interior">Interior</span>
+        </div>
+
+        <div class="gallery-grid reveal reveal-scale" id="dynamicGallery"></div>
+
+        <!-- View More / View Less Gallery Switcher -->
+        <div class="gallery-cta" style="text-align: center; margin-top: 4rem;">
+          <button id="viewMoreBtn" class="btn btn-gold-outline" data-translate="btn_view_more">View More</button>
+        </div>
       </div>
+    </section>
 
-      <div class="gallery-filters reveal reveal-up">
-        <span class="filter-btn active" data-filter="exterior" data-translate="gallery_filter_exterior">Exterior</span>
-        <span class="filter-btn" data-filter="interior" data-translate="gallery_filter_interior">Interior</span>
-      </div>
-
-      <div class="gallery-grid reveal reveal-scale" id="dynamicGallery"></div>
-
-      <!-- View More / View Less Gallery Switcher -->
-      <div class="gallery-cta" style="text-align: center; margin-top: 4rem;">
-        <button id="viewMoreBtn" class="btn btn-gold-outline" data-translate="btn_view_more">View More</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
+    <!-- ==========================================================================
        GALLERY LIGHTBOX MODAL
        ========================================================================== -->
-  <div class="lightbox" id="lightbox">
-    <div class="lightbox-close"><i class="fa-solid fa-xmark"></i></div>
-    <div class="lightbox-nav lightbox-prev"><i class="fa-solid fa-chevron-left"></i></div>
-    <div class="lightbox-nav lightbox-next"><i class="fa-solid fa-chevron-right"></i></div>
+    <div class="lightbox" id="lightbox">
+      <div class="lightbox-close"><i class="fa-solid fa-xmark"></i></div>
+      <div class="lightbox-nav lightbox-prev"><i class="fa-solid fa-chevron-left"></i></div>
+      <div class="lightbox-nav lightbox-next"><i class="fa-solid fa-chevron-right"></i></div>
 
-    <div class="lightbox-content">
-      <img src="" alt="" class="lightbox-img">
-      <div class="lightbox-caption">
-        <h4 class="lightbox-title"></h4>
-        <span class="lightbox-cat"></span>
+      <div class="lightbox-content">
+        <img src="" alt="" class="lightbox-img">
+        <div class="lightbox-caption">
+          <h4 class="lightbox-title"></h4>
+          <span class="lightbox-cat"></span>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- ==========================================================================
+    <!-- ==========================================================================
        FAQ SECTION
        ========================================================================== -->
-  <section class="section faq-section" id="faq">
-    <div class="container">
-      <div class="section-header reveal reveal-up">
-        <span class="section-subtitle" data-translate="faq_subtitle">Common Inquiries</span>
-        <h2 class="section-title" data-translate="faq_title">Frequently Asked Questions</h2>
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-header reveal reveal-up">
+          <span class="section-subtitle" data-translate="faq_subtitle">Common Inquiries</span>
+          <h2 class="section-title" data-translate="faq_title">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-accordion reveal reveal-up delay-100">
+          <!-- Question 1 -->
+          <div class="faq-item">
+            <button class="faq-question" id="faqQuest1" aria-expanded="false" aria-controls="faqAns1">
+              <span data-translate="faq_q1">What are the standard Check-in and Check-out times?</span>
+              <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+            </button>
+            <div class="faq-answer" id="faqAns1" role="region" aria-labelledby="faqQuest1">
+              <div class="faq-answer-content">
+                <p data-translate="faq_a1">Check-in is from 16:00, and Check-out is until 10:00. This buffer allows our
+                  professional housekeeping team to perform a deep-cleaning and sanitize the villa before each guest
+                  arrival, ensuring our premium cleanliness standards are fully maintained.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="faq-item">
+            <button class="faq-question" id="faqQuest2" aria-expanded="false" aria-controls="faqAns2">
+              <span data-translate="faq_q2">Are pets allowed at the villa?</span>
+              <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+            </button>
+            <div class="faq-answer" id="faqAns2" role="region" aria-labelledby="faqQuest2">
+              <div class="faq-answer-content">
+                <p data-translate="faq_a2">To preserve the high-end interior fabrics, premium hardwood floor finishings,
+                  and accommodate guests with severe allergies, pets are strictly not allowed at Villa Posija. We
+                  appreciate your understanding in helping us maintain the pristine state of the property.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="faq-item">
+            <button class="faq-question" id="faqQuest3" aria-expanded="false" aria-controls="faqAns3">
+              <span data-translate="faq_q3">Is parking available and is there a charging station for electric
+                vehicles?</span>
+              <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+            </button>
+            <div class="faq-answer" id="faqAns3" role="region" aria-labelledby="faqQuest3">
+              <div class="faq-answer-content">
+                <p data-translate="faq_a3">Yes, Villa Posija includes secure private parking for multiple vehicles right
+                  in front of the villa. We also offer a free Type 2 electric vehicle (EV) charging station for all our
+                  guests.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="faq-item">
+            <button class="faq-question" id="faqQuest4" aria-expanded="false" aria-controls="faqAns4">
+              <span data-translate="faq_q4">Is there a minimum stay requirement?</span>
+              <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
+            </button>
+            <div class="faq-answer" id="faqAns4" role="region" aria-labelledby="faqQuest4">
+              <div class="faq-answer-content">
+                <p data-translate="faq_a4">Yes, to provide a complete, high-end experience, Villa Posija has a minimum
+                  stay requirement of 7 nights. Bookings can be made directly via our availability calendar and
+                  confirmed through a WhatsApp inquiry with guest services.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="faq-accordion reveal reveal-up delay-100">
-        <!-- Question 1 -->
-        <div class="faq-item">
-          <button class="faq-question" id="faqQuest1" aria-expanded="false" aria-controls="faqAns1">
-            <span data-translate="faq_q1">What are the standard Check-in and Check-out times?</span>
-            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
-          </button>
-          <div class="faq-answer" id="faqAns1" role="region" aria-labelledby="faqQuest1">
-            <div class="faq-answer-content">
-              <p data-translate="faq_a1">Check-in is from 16:00, and Check-out is until 10:00. This buffer allows our professional housekeeping team to perform a deep-cleaning and sanitize the villa before each guest arrival, ensuring our premium cleanliness standards are fully maintained.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Question 2 -->
-        <div class="faq-item">
-          <button class="faq-question" id="faqQuest2" aria-expanded="false" aria-controls="faqAns2">
-            <span data-translate="faq_q2">Are pets allowed at the villa?</span>
-            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
-          </button>
-          <div class="faq-answer" id="faqAns2" role="region" aria-labelledby="faqQuest2">
-            <div class="faq-answer-content">
-              <p data-translate="faq_a2">To preserve the high-end interior fabrics, premium hardwood floor finishings, and accommodate guests with severe allergies, pets are strictly not allowed at Villa Posija. We appreciate your understanding in helping us maintain the pristine state of the property.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Question 3 -->
-        <div class="faq-item">
-          <button class="faq-question" id="faqQuest3" aria-expanded="false" aria-controls="faqAns3">
-            <span data-translate="faq_q3">Is parking available and is there a charging station for electric vehicles?</span>
-            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
-          </button>
-          <div class="faq-answer" id="faqAns3" role="region" aria-labelledby="faqQuest3">
-            <div class="faq-answer-content">
-              <p data-translate="faq_a3">Yes, Villa Posija includes secure private parking for multiple vehicles right in front of the villa. We also offer a free Type 2 electric vehicle (EV) charging station for all our guests.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Question 4 -->
-        <div class="faq-item">
-          <button class="faq-question" id="faqQuest4" aria-expanded="false" aria-controls="faqAns4">
-            <span data-translate="faq_q4">Is there a minimum stay requirement?</span>
-            <span class="faq-icon"><i class="fa-solid fa-plus"></i></span>
-          </button>
-          <div class="faq-answer" id="faqAns4" role="region" aria-labelledby="faqQuest4">
-            <div class="faq-answer-content">
-              <p data-translate="faq_a4">Yes, to provide a complete, high-end experience, Villa Posija has a minimum stay requirement of 7 nights. Bookings can be made directly via our availability calendar and confirmed through a WhatsApp inquiry with guest services.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
+    <!-- ==========================================================================
        CONTACT, LOCATION, & CALENDAR SECTION
        ========================================================================== -->
-  <section class="section contact-section" id="contact">
-    <div class="container">
-      <div class="contact-grid">
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-grid">
 
-        <!-- Info Column & Styled Google Map -->
-        <div class="contact-info-container reveal reveal-left">
-          <div class="contact-info-text">
-            <span class="section-subtitle" data-translate="contact_subtitle">Inquiries</span>
-            <h2 class="about-heading" data-translate="contact_heading">Begin Your Exclusive Journey</h2>
-            <p class="about-description" style="margin-bottom: 0;" data-translate="contact_desc">
-              Contact our dedicated guest relations team to request your reservations, customize your itinerary, or
-              arrange VIP private concierge services in Kras, Krk.
+          <!-- Info Column & Styled Google Map -->
+          <div class="contact-info-container reveal reveal-left">
+            <div class="contact-info-text">
+              <span class="section-subtitle" data-translate="contact_subtitle">Inquiries</span>
+              <h2 class="about-heading" data-translate="contact_heading">Begin Your Exclusive Journey</h2>
+              <p class="about-description" style="margin-bottom: 0;" data-translate="contact_desc">
+                Contact our dedicated guest relations team to request your reservations, customize your itinerary, or
+                arrange VIP private concierge services in Kras, Krk.
+              </p>
+            </div>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <h4 class="contact-item-title" data-translate="contact_lbl_location">Location</h4>
+                  <p class="contact-item-value">Kras 122A, 51514, Otok Krk, Hrvatska</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <h4 class="contact-item-title" data-translate="contact_lbl_reservations">Reservations</h4>
+                  <p class="contact-item-value">+385 (0) 51 856 900</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <h4 class="contact-item-title" data-translate="contact_lbl_email">E-mail Address</h4>
+                  <p class="contact-item-value">concierge@villaposija.hr</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Styled Map Container Placeholder -->
+            <div class="map-container">
+              <div class="map-placeholder">
+                <div class="map-placeholder-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                <h4 class="map-placeholder-text" data-translate="map_title">Find Villa Posija</h4>
+                <p class="map-placeholder-sub" data-translate="map_sub">Kras, Krk Island, Croatia</p>
+                <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-gold-outline"
+                  style="padding: 0.5rem 1.2rem; font-size: 0.7rem;" data-translate="map_btn">Open Google Maps</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Form Column with Custom Datepicker Calendar -->
+          <div class="reveal reveal-right">
+            <form class="contact-form" id="contactForm" novalidate>
+
+              <!-- Honeypot Anti-Spam Field -->
+              <div class="honeypot-field" style="display:none !important; visibility:hidden !important;">
+                <label>Bot Trap:</label>
+                <input type="text" name="villa_posija_honey" id="villaPosijaHoney" autocomplete="off">
+              </div>
+
+              <!-- Name Input -->
+              <div class="form-group">
+                <input type="text" id="formName" class="form-input" required>
+                <label for="formName" class="form-label" data-translate="form_label_name">Full Name</label>
+              </div>
+
+
+
+              <!-- Custom Datepicker Widget -->
+              <div class="calendar-group">
+                <span class="calendar-group-label" data-translate="calendar_label">Select Availability / Dates</span>
+                <div class="calendar-widget">
+                  <div class="calendar-header">
+                    <button type="button" class="calendar-nav-btn" id="calendarPrev"><i
+                        class="fa-solid fa-chevron-left"></i></button>
+                    <div class="calendar-title" id="calendarTitle">Month Year</div>
+                    <button type="button" class="calendar-nav-btn" id="calendarNext"><i
+                        class="fa-solid fa-chevron-right"></i></button>
+                  </div>
+                  <div class="calendar-grid">
+                    <div class="calendar-weekday" data-translate="day_mon">Mon</div>
+                    <div class="calendar-weekday" data-translate="day_tue">Tue</div>
+                    <div class="calendar-weekday" data-translate="day_wed">Wed</div>
+                    <div class="calendar-weekday" data-translate="day_thu">Thu</div>
+                    <div class="calendar-weekday" data-translate="day_fri">Fri</div>
+                    <div class="calendar-weekday" data-translate="day_sat">Sat</div>
+                    <div class="calendar-weekday" data-translate="day_sun">Sun</div>
+                  </div>
+                  <div class="calendar-grid" id="calendarDays">
+                    <!-- Injected via JS -->
+                  </div>
+                  <div class="calendar-legend">
+                    <div class="legend-item">
+                      <div class="legend-color available"></div>
+                      <span data-translate="legend_available">Available</span>
+                    </div>
+                    <div class="legend-item">
+                      <div class="legend-color booked"></div>
+                      <span data-translate="legend_booked">Booked</span>
+                    </div>
+                    <div class="legend-item">
+                      <div class="legend-color selected"></div>
+                      <span data-translate="legend_selected">Selected</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Travel Date Output Displays (Linked to Hidden Inputs) -->
+              <div class="booking-dates-grid">
+                <div style="position: relative;">
+                  <span
+                    style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-gold); display: block; margin-bottom: 0.5rem;"
+                    data-translate="lbl_checkin_date">Check-In Date</span>
+                  <div id="checkInText"
+                    style="padding: 0.8rem 0; border-bottom: 1px solid var(--border-color); color: var(--text-primary); font-size: 0.9rem; font-weight: 300;">
+                    Select check-in</div>
+                  <input type="hidden" id="inputCheckIn" name="check_in" required>
+                </div>
+                <div style="position: relative;">
+                  <span
+                    style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-gold); display: block; margin-bottom: 0.5rem;"
+                    data-translate="lbl_checkout_date">Check-Out Date</span>
+                  <div id="checkOutText"
+                    style="padding: 0.8rem 0; border-bottom: 1px solid var(--border-color); color: var(--text-primary); font-size: 0.9rem; font-weight: 300;">
+                    Select check-out</div>
+                  <input type="hidden" id="inputCheckOut" name="check_out" required>
+                </div>
+              </div>
+
+              <!-- Message Input -->
+              <div class="form-group" style="margin-bottom: 3.5rem;">
+                <textarea id="formMessage" class="form-input"></textarea>
+                <label for="formMessage" class="form-label" data-translate="form_label_message">Special Requests /
+                  Message</label>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="submit-container" style="text-align: center;">
+                <button type="submit" class="btn btn-primary" style="width: 100%;" data-translate="btn_book_wa">Book Now
+                  via WhatsApp</button>
+                <span
+                  style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.8rem; display: block; letter-spacing: 0.05em;"
+                  data-translate="wa_notice">
+                  *You will be redirected to WhatsApp to confirm details directly.
+                </span>
+              </div>
+
+              <!-- Form Success Overlay -->
+              <div class="form-success-overlay" id="formSuccessOverlay">
+                <div class="success-icon" style="color: #25D366;"><i class="fa-brands fa-whatsapp"></i></div>
+                <h3 class="success-title font-serif" data-translate="success_title">Opening WhatsApp</h3>
+                <p class="success-message" data-translate="success_message">
+                  We are opening WhatsApp in a new tab to submit your reservation request for the selected dates. If the
+                  page did not open automatically, please click below.
+                </p>
+                <div style="display: flex; flex-direction: column; gap: 1rem; width: 100%;">
+                  <a href="#" id="manualWaLink" target="_blank" class="btn btn-primary"
+                    data-translate="btn_manual_wa">Open WhatsApp Manually</a>
+                  <button type="button" class="btn btn-gold-outline" id="successCloseBtn"
+                    data-translate="btn_close_window">Close Window</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+       FOOTER SECTION
+       ========================================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+
+          <!-- Column 1: Brand Info -->
+          <div class="footer-brand">
+            <div class="footer-logo">
+              VILLA <span class="logo-gold">POSIJA</span>
+            </div>
+            <p class="footer-desc" data-translate="footer_brand_desc">
+              Send us a direct inquiry via WhatsApp to book your stay and secure an unforgettable holiday at Villa
+              Posija in Kras on the island of Krk.
             </p>
           </div>
 
-          <div class="contact-details">
-            <div class="contact-item">
-              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
-              <div>
-                <h4 class="contact-item-title" data-translate="contact_lbl_location">Location</h4>
-                <p class="contact-item-value">Kras 122A, 51514, Otok Krk, Hrvatska</p>
-              </div>
-            </div>
+          <!-- Column 2: Navigation Links -->
+          <div class="footer-nav">
+            <h4 class="footer-heading" data-translate="footer_nav_hdr">Navigations</h4>
+            <ul class="footer-links">
+              <li><a href="#hero" class="footer-link" data-translate="footer_link_home">Home</a></li>
+              <li><a href="#about" class="footer-link" data-translate="footer_link_about">About the Villa</a></li>
+              <li><a href="#gallery" class="footer-link" data-translate="footer_link_gallery">Photo Gallery</a></li>
+              <li><a href="#contact" class="footer-link" data-translate="footer_link_contact">Contact / Booking</a></li>
+            </ul>
+          </div>
 
-            <div class="contact-item">
-              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
-              <div>
-                <h4 class="contact-item-title" data-translate="contact_lbl_reservations">Reservations</h4>
-                <p class="contact-item-value">+385 (0) 51 856 900</p>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
-              <div>
-                <h4 class="contact-item-title" data-translate="contact_lbl_email">E-mail Address</h4>
-                <p class="contact-item-value">concierge@villaposija.hr</p>
-              </div>
+          <!-- Column 3: Contact & Socials -->
+          <div class="footer-contact">
+            <h4 class="footer-heading" data-translate="footer_connect_hdr">Stay Connected</h4>
+            <p class="footer-desc" style="margin-bottom: 0.5rem;" data-translate="footer_connect_desc">
+              Follow our social media channels for luxury design inspirations and seasonal availability updates in
+              Croatia.
+            </p>
+            <div class="social-links">
+              <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon"
+                aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook"><i
+                  class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://pinterest.com" target="_blank" rel="noopener" class="social-icon"
+                aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+              <a href="https://tripadvisor.com" target="_blank" rel="noopener" class="social-icon"
+                aria-label="Tripadvisor"><i class="fa-brands fa-tripadvisor"></i></a>
             </div>
           </div>
 
-          <!-- Styled Map Container Placeholder -->
-          <div class="map-container">
-            <div class="map-placeholder">
-              <div class="map-placeholder-icon"><i class="fa-solid fa-map-location-dot"></i></div>
-              <h4 class="map-placeholder-text" data-translate="map_title">Find Villa Posija</h4>
-              <p class="map-placeholder-sub" data-translate="map_sub">Kras, Krk Island, Croatia</p>
-              <a href="https://maps.google.com" target="_blank" rel="noopener" class="btn btn-gold-outline"
-                style="padding: 0.5rem 1.2rem; font-size: 0.7rem;" data-translate="map_btn">Open Google Maps</a>
-            </div>
+        </div>
+
+        <!-- Footer Bottom Bar -->
+        <div class="footer-bottom">
+          <div data-translate="footer_copy">
+            &copy; 2026 Villa Posija. All Rights Reserved.
+          </div>
+          <div class="footer-studio" data-translate="footer_designed_by">
+            Designed by <a href="#hero" class="footer-studio-link">Antigravity Studio</a>
           </div>
         </div>
-
-        <!-- Interactive Form Column with Custom Datepicker Calendar -->
-        <div class="reveal reveal-right">
-          <form class="contact-form" id="contactForm" novalidate>
-
-            <!-- Honeypot Anti-Spam Field -->
-            <div class="honeypot-field" style="display:none !important; visibility:hidden !important;">
-                <label>Bot Trap:</label>
-                <input type="text" name="villa_posija_honey" id="villaPosijaHoney" autocomplete="off">
-            </div>
-
-            <!-- Name Input -->
-            <div class="form-group">
-              <input type="text" id="formName" class="form-input" required>
-              <label for="formName" class="form-label" data-translate="form_label_name">Full Name</label>
-            </div>
-
-
-
-            <!-- Custom Datepicker Widget -->
-            <div class="calendar-group">
-              <span class="calendar-group-label" data-translate="calendar_label">Select Availability / Dates</span>
-              <div class="calendar-widget">
-                <div class="calendar-header">
-                  <button type="button" class="calendar-nav-btn" id="calendarPrev"><i
-                      class="fa-solid fa-chevron-left"></i></button>
-                  <div class="calendar-title" id="calendarTitle">Month Year</div>
-                  <button type="button" class="calendar-nav-btn" id="calendarNext"><i
-                      class="fa-solid fa-chevron-right"></i></button>
-                </div>
-                <div class="calendar-grid">
-                  <div class="calendar-weekday" data-translate="day_mon">Mon</div>
-                  <div class="calendar-weekday" data-translate="day_tue">Tue</div>
-                  <div class="calendar-weekday" data-translate="day_wed">Wed</div>
-                  <div class="calendar-weekday" data-translate="day_thu">Thu</div>
-                  <div class="calendar-weekday" data-translate="day_fri">Fri</div>
-                  <div class="calendar-weekday" data-translate="day_sat">Sat</div>
-                  <div class="calendar-weekday" data-translate="day_sun">Sun</div>
-                </div>
-                <div class="calendar-grid" id="calendarDays">
-                  <!-- Injected via JS -->
-                </div>
-                <div class="calendar-legend">
-                  <div class="legend-item">
-                    <div class="legend-color available"></div>
-                    <span data-translate="legend_available">Available</span>
-                  </div>
-                  <div class="legend-item">
-                    <div class="legend-color booked"></div>
-                    <span data-translate="legend_booked">Booked</span>
-                  </div>
-                  <div class="legend-item">
-                    <div class="legend-color selected"></div>
-                    <span data-translate="legend_selected">Selected</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Travel Date Output Displays (Linked to Hidden Inputs) -->
-            <div class="booking-dates-grid">
-              <div style="position: relative;">
-                <span
-                  style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-gold); display: block; margin-bottom: 0.5rem;" data-translate="lbl_checkin_date">Check-In Date</span>
-                <div id="checkInText"
-                  style="padding: 0.8rem 0; border-bottom: 1px solid var(--border-color); color: var(--text-primary); font-size: 0.9rem; font-weight: 300;">Select check-in</div>
-                <input type="hidden" id="inputCheckIn" name="check_in" required>
-              </div>
-              <div style="position: relative;">
-                <span
-                  style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-gold); display: block; margin-bottom: 0.5rem;" data-translate="lbl_checkout_date">Check-Out Date</span>
-                <div id="checkOutText"
-                  style="padding: 0.8rem 0; border-bottom: 1px solid var(--border-color); color: var(--text-primary); font-size: 0.9rem; font-weight: 300;">Select check-out</div>
-                <input type="hidden" id="inputCheckOut" name="check_out" required>
-              </div>
-            </div>
-
-            <!-- Message Input -->
-            <div class="form-group" style="margin-bottom: 3.5rem;">
-              <textarea id="formMessage" class="form-input"></textarea>
-              <label for="formMessage" class="form-label" data-translate="form_label_message">Special Requests / Message</label>
-            </div>
-
-            <!-- Submit Button -->
-            <div class="submit-container" style="text-align: center;">
-              <button type="submit" class="btn btn-primary" style="width: 100%;" data-translate="btn_book_wa">Book Now via WhatsApp</button>
-              <span
-                style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.8rem; display: block; letter-spacing: 0.05em;" data-translate="wa_notice">
-                *You will be redirected to WhatsApp to confirm details directly.
-              </span>
-            </div>
-
-            <!-- Form Success Overlay -->
-            <div class="form-success-overlay" id="formSuccessOverlay">
-              <div class="success-icon" style="color: #25D366;"><i class="fa-brands fa-whatsapp"></i></div>
-              <h3 class="success-title font-serif" data-translate="success_title">Opening WhatsApp</h3>
-              <p class="success-message" data-translate="success_message">
-                We are opening WhatsApp in a new tab to submit your reservation request for the selected dates. If the
-                page did not open automatically, please click below.
-              </p>
-              <div style="display: flex; flex-direction: column; gap: 1rem; width: 100%;">
-                <a href="#" id="manualWaLink" target="_blank" class="btn btn-primary" data-translate="btn_manual_wa">Open WhatsApp Manually</a>
-                <button type="button" class="btn btn-gold-outline" id="successCloseBtn" data-translate="btn_close_window">Close Window</button>
-              </div>
-            </div>
-          </form>
-        </div>
-
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- ==========================================================================
-       FOOTER SECTION
-       ========================================================================== -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-
-        <!-- Column 1: Brand Info -->
-        <div class="footer-brand">
-          <div class="footer-logo">
-            VILLA <span class="logo-gold">POSIJA</span>
-          </div>
-          <p class="footer-desc" data-translate="footer_brand_desc">
-            Send us a direct inquiry via WhatsApp to book your stay and secure an unforgettable holiday at Villa Posija in Kras on the island of Krk.
+    <!-- Cookie Consent Banner -->
+    <div class="cookie-banner" id="cookieBanner">
+      <div class="cookie-banner-content">
+        <div class="cookie-icon-wrapper">
+          <i class="fa-solid fa-cookie-bite"></i>
+        </div>
+        <div class="cookie-text">
+          <h4 class="cookie-title font-serif" data-translate="cookie_title">We value your privacy</h4>
+          <p class="cookie-description" data-translate="cookie_desc">
+            We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By
+            clicking "Accept All", you consent to our use of cookies.
           </p>
         </div>
+      </div>
+      <div class="cookie-banner-actions">
+        <button type="button" class="btn btn-gold-outline" id="btnCustomizeCookies"
+          data-translate="cookie_btn_customize">Customize</button>
+        <button type="button" class="btn btn-primary" id="btnAcceptAllCookies" data-translate="cookie_btn_accept">Accept
+          All</button>
+      </div>
+    </div>
 
-        <!-- Column 2: Navigation Links -->
-        <div class="footer-nav">
-          <h4 class="footer-heading" data-translate="footer_nav_hdr">Navigations</h4>
-          <ul class="footer-links">
-            <li><a href="#hero" class="footer-link" data-translate="footer_link_home">Home</a></li>
-            <li><a href="#about" class="footer-link" data-translate="footer_link_about">About the Villa</a></li>
-            <li><a href="#gallery" class="footer-link" data-translate="footer_link_gallery">Photo Gallery</a></li>
-            <li><a href="#contact" class="footer-link" data-translate="footer_link_contact">Contact / Booking</a></li>
-          </ul>
-        </div>
+    <!-- Cookie Consent Customize Modal -->
+    <div class="cookie-modal" id="cookieModal" role="dialog" aria-modal="true" aria-labelledby="cookieModalTitle">
+      <div class="cookie-modal-backdrop" id="cookieModalBackdrop"></div>
+      <div class="cookie-modal-content">
+        <button type="button" class="cookie-modal-close" id="cookieModalCloseBtn" aria-label="Close Settings"><i
+            class="fa-solid fa-xmark"></i></button>
+        <h3 class="cookie-modal-title font-serif" id="cookieModalTitle" data-translate="cookie_modal_title">Cookie
+          Preferences</h3>
+        <p class="cookie-modal-desc" data-translate="cookie_modal_desc">Customize your cookie preferences. Essential
+          cookies are required to run the site and cannot be disabled.</p>
 
-        <!-- Column 3: Contact & Socials -->
-        <div class="footer-contact">
-          <h4 class="footer-heading" data-translate="footer_connect_hdr">Stay Connected</h4>
-          <p class="footer-desc" style="margin-bottom: 0.5rem;" data-translate="footer_connect_desc">
-            Follow our social media channels for luxury design inspirations and seasonal availability updates in
-            Croatia.
-          </p>
-          <div class="social-links">
-            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram"><i
-                class="fa-brands fa-instagram"></i></a>
-            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook"><i
-                class="fa-brands fa-facebook-f"></i></a>
-            <a href="https://pinterest.com" target="_blank" rel="noopener" class="social-icon" aria-label="Pinterest"><i
-                class="fa-brands fa-pinterest-p"></i></a>
-            <a href="https://tripadvisor.com" target="_blank" rel="noopener" class="social-icon"
-              aria-label="Tripadvisor"><i class="fa-brands fa-tripadvisor"></i></a>
+        <div class="cookie-options-list">
+          <!-- Essential Options -->
+          <div class="cookie-option-item">
+            <div class="cookie-option-info">
+              <h4 class="cookie-option-title" data-translate="cookie_lbl_essential">Essential Cookies</h4>
+              <p class="cookie-option-desc" data-translate="cookie_desc_essential">Required for basic website
+                functionality, language selection, and theme settings.</p>
+            </div>
+            <div class="cookie-option-action">
+              <span class="cookie-status-badge" data-translate="cookie_always_active">Always Active</span>
+            </div>
+          </div>
+
+          <!-- Analytics Options -->
+          <div class="cookie-option-item">
+            <div class="cookie-option-info">
+              <h4 class="cookie-option-title" data-translate="cookie_lbl_analytics">Analytics Cookies</h4>
+              <p class="cookie-option-desc" data-translate="cookie_desc_analytics">Help us analyze website traffic and
+                user behavior to continuously improve our services.</p>
+            </div>
+            <div class="cookie-option-action">
+              <label class="cookie-switch">
+                <input type="checkbox" id="cookieOptAnalytics" checked>
+                <span class="cookie-slider"></span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Marketing Options -->
+          <div class="cookie-option-item">
+            <div class="cookie-option-info">
+              <h4 class="cookie-option-title" data-translate="cookie_lbl_marketing">Marketing Cookies</h4>
+              <p class="cookie-option-desc" data-translate="cookie_desc_marketing">Enable personalized features, social
+                sharing, and targeted promotional content.</p>
+            </div>
+            <div class="cookie-option-action">
+              <label class="cookie-switch">
+                <input type="checkbox" id="cookieOptMarketing" checked>
+                <span class="cookie-slider"></span>
+              </label>
+            </div>
           </div>
         </div>
 
-      </div>
-
-      <!-- Footer Bottom Bar -->
-      <div class="footer-bottom">
-        <div data-translate="footer_copy">
-          &copy; 2026 Villa Posija. All Rights Reserved.
-        </div>
-        <div class="footer-studio" data-translate="footer_designed_by">
-          Designed by <a href="#hero" class="footer-studio-link">Antigravity Studio</a>
+        <div class="cookie-modal-actions">
+          <button type="button" class="btn btn-gold-outline" id="btnSaveCookieSettings"
+            data-translate="cookie_btn_save">Save Preferences</button>
+          <button type="button" class="btn btn-primary" id="btnAcceptAllCookiesModal"
+            data-translate="cookie_btn_accept">Accept All</button>
         </div>
       </div>
     </div>
-  </footer>
-
-  <!-- Cookie Consent Banner -->
-  <div class="cookie-banner" id="cookieBanner">
-    <div class="cookie-banner-content">
-      <div class="cookie-icon-wrapper">
-        <i class="fa-solid fa-cookie-bite"></i>
-      </div>
-      <div class="cookie-text">
-        <h4 class="cookie-title font-serif" data-translate="cookie_title">We value your privacy</h4>
-        <p class="cookie-description" data-translate="cookie_desc">
-          We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking "Accept All", you consent to our use of cookies.
-        </p>
-      </div>
-    </div>
-    <div class="cookie-banner-actions">
-      <button type="button" class="btn btn-gold-outline" id="btnCustomizeCookies" data-translate="cookie_btn_customize">Customize</button>
-      <button type="button" class="btn btn-primary" id="btnAcceptAllCookies" data-translate="cookie_btn_accept">Accept All</button>
-    </div>
-  </div>
-
-  <!-- Cookie Consent Customize Modal -->
-  <div class="cookie-modal" id="cookieModal" role="dialog" aria-modal="true" aria-labelledby="cookieModalTitle">
-    <div class="cookie-modal-backdrop" id="cookieModalBackdrop"></div>
-    <div class="cookie-modal-content">
-      <button type="button" class="cookie-modal-close" id="cookieModalCloseBtn" aria-label="Close Settings"><i class="fa-solid fa-xmark"></i></button>
-      <h3 class="cookie-modal-title font-serif" id="cookieModalTitle" data-translate="cookie_modal_title">Cookie Preferences</h3>
-      <p class="cookie-modal-desc" data-translate="cookie_modal_desc">Customize your cookie preferences. Essential cookies are required to run the site and cannot be disabled.</p>
-      
-      <div class="cookie-options-list">
-        <!-- Essential Options -->
-        <div class="cookie-option-item">
-          <div class="cookie-option-info">
-            <h4 class="cookie-option-title" data-translate="cookie_lbl_essential">Essential Cookies</h4>
-            <p class="cookie-option-desc" data-translate="cookie_desc_essential">Required for basic website functionality, language selection, and theme settings.</p>
-          </div>
-          <div class="cookie-option-action">
-            <span class="cookie-status-badge" data-translate="cookie_always_active">Always Active</span>
-          </div>
-        </div>
-
-        <!-- Analytics Options -->
-        <div class="cookie-option-item">
-          <div class="cookie-option-info">
-            <h4 class="cookie-option-title" data-translate="cookie_lbl_analytics">Analytics Cookies</h4>
-            <p class="cookie-option-desc" data-translate="cookie_desc_analytics">Help us analyze website traffic and user behavior to continuously improve our services.</p>
-          </div>
-          <div class="cookie-option-action">
-            <label class="cookie-switch">
-              <input type="checkbox" id="cookieOptAnalytics" checked>
-              <span class="cookie-slider"></span>
-            </label>
-          </div>
-        </div>
-
-        <!-- Marketing Options -->
-        <div class="cookie-option-item">
-          <div class="cookie-option-info">
-            <h4 class="cookie-option-title" data-translate="cookie_lbl_marketing">Marketing Cookies</h4>
-            <p class="cookie-option-desc" data-translate="cookie_desc_marketing">Enable personalized features, social sharing, and targeted promotional content.</p>
-          </div>
-          <div class="cookie-option-action">
-            <label class="cookie-switch">
-              <input type="checkbox" id="cookieOptMarketing" checked>
-              <span class="cookie-slider"></span>
-            </label>
-          </div>
-        </div>
-      </div>
-
-      <div class="cookie-modal-actions">
-        <button type="button" class="btn btn-gold-outline" id="btnSaveCookieSettings" data-translate="cookie_btn_save">Save Preferences</button>
-        <button type="button" class="btn btn-primary" id="btnAcceptAllCookiesModal" data-translate="cookie_btn_accept">Accept All</button>
-      </div>
-    </div>
-  </div>
 
   </div> <!-- #app -->
 
