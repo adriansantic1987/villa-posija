@@ -40,7 +40,7 @@ const translations = {
     about_subtitle: "The Retreat",
     about_heading: "Elegant Interior and Spacious Terrace",
     about_desc: "The interior of Villa Posija focuses on high-end comfort. The bright living area features large panoramic doors leading directly to the terrace. The highlight of the outdoor space is the large private pool surrounded by comfortable loungers, perfect for summer relaxation.",
-    about_cta: "Contact Guest Services",
+    about_cta: "Contact Us",
     gallery_subtitle: "Visual Splendor",
     gallery_title: "Experience Villa Posija",
     gallery_filter_exterior: "Exterior",
@@ -120,7 +120,7 @@ const translations = {
     footer_connect_desc: "Follow our social media channels for luxury design inspirations and seasonal availability updates in Croatia.",
     footer_copy: "&copy; 2026 Villa Posija. All Rights Reserved.",
     footer_designed_by: "Designed by <a href=\"#hero\" class=\"footer-studio-link\">Antigravity Studio</a>",
-    
+
     // Dynamic JS Translations
     select_checkin: "Select Check-in Date",
     select_checkout: "Select Check-out Date",
@@ -158,7 +158,7 @@ const translations = {
     about_subtitle: "Utočište",
     about_heading: "Elegantan interijer i prostrana terasa",
     about_desc: "Unutrašnjost Ville Posije osmišljena je s fokusom na vrhunsku udobnost. Svijetli dnevni boravak s velikim panoramskim vratima izravno se povezuje s vanjskom terasom, stvarajući savršen sklad prostora. Srce eksterijera je veliki privatni bazen okružen udobnim ležaljkama, idealan za ljetno osvježenje.",
-    about_cta: "Kontaktirajte recepciju",
+    about_cta: "Kontaktirajte nas",
     gallery_subtitle: "Vizualni sjaj",
     gallery_title: "Doživite Villu Posija",
     gallery_filter_exterior: "Eksterijer",
@@ -238,7 +238,7 @@ const translations = {
     footer_connect_desc: "Pratite naše profile na društvenim mrežama za luksuzne dizajnerske inspiracije i novosti o slobodnim terminima.",
     footer_copy: "&copy; 2026 Villa Posija. Sva prava pridržana.",
     footer_designed_by: "Dizajnirao <a href=\"#hero\" class=\"footer-studio-link\">Antigravity Studio</a>",
-    
+
     // Dynamic JS Translations
     select_checkin: "Odaberite datum prijave",
     select_checkout: "Odaberite datum odjave",
@@ -276,7 +276,7 @@ const translations = {
     about_subtitle: "Das Anwesen",
     about_heading: "Eleganter Innenbereich und großzügige Terrasse",
     about_desc: "Das Interieur der Villa Posija konzentriert sich auf erstklassigen Komfort. Der helle Wohnbereich bietet große Panoramatüren, die direkt auf die Terrasse führen. Das Highlight des Außenbereichs ist der große private Pool, umgeben von bequemen Liegestühlen – perfekt für die sommerliche Entspannung.",
-    about_cta: "Gästeservice kontaktieren",
+    about_cta: "Kontaktieren Sie uns",
     gallery_subtitle: "Visuelle Pracht",
     gallery_title: "Erleben Sie die Villa Posija",
     gallery_filter_exterior: "Außenbereich",
@@ -356,7 +356,7 @@ const translations = {
     footer_connect_desc: "Folgen Sie uns auf unseren Kanälen für Impressionen und aktuelle Informationen zur Verfügbarkeit.",
     footer_copy: "&copy; 2026 Villa Posija. Alle Rechte vorbehalten.",
     footer_designed_by: "Gestaltet von <a href=\"#hero\" class=\"footer-studio-link\">Antigravity Studio</a>",
-    
+
     // Dynamic JS Translations
     select_checkin: "Anreisedatum wählen",
     select_checkout: "Abreisedatum wählen",
@@ -394,7 +394,7 @@ const translations = {
     about_subtitle: "Il rifugio",
     about_heading: "Interni eleganti e terrazza spaziosa",
     about_desc: "L'interno di Villa Posija è incentrato sul massimo comfort. La luminosa zona giorno è dotata di ampie vetrate panoramiche che conducono direttamente alla terrazza. Il fiore all'occhiello dello spazio esterno è la grande piscina privata circondata da comodi lettini, ideale per il relax estivo.",
-    about_cta: "Contatta il servizio ospiti",
+    about_cta: "Contattaci",
     gallery_subtitle: "Splendore visivo",
     gallery_title: "Scoprite Villa Posija",
     gallery_filter_exterior: "Esterni",
@@ -474,7 +474,7 @@ const translations = {
     footer_connect_desc: "Seguite i nostri profili social per ispirazioni di design e aggiornamenti sulla disponibilità.",
     footer_copy: "&copy; 2026 Villa Posija. Tutti i diritti riservati.",
     footer_designed_by: "Ideato da <a href=\"#hero\" class=\"footer-studio-link\">Antigravity Studio</a>",
-    
+
     // Dynamic JS Translations
     select_checkin: "Seleziona arrivo",
     select_checkout: "Seleziona partenza",
@@ -827,7 +827,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function updateGalleryVisibility() {
     const activeFilterBtn = document.querySelector('.filter-btn.active');
     const filterValue = activeFilterBtn ? activeFilterBtn.getAttribute('data-filter') : 'exterior';
-    
+
     // Determine columns based on window width
     const width = window.innerWidth;
     let cols = 3;
@@ -836,18 +836,18 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (width <= 992) {
       cols = 2;
     }
-    
+
     const limit = cols * 2;
     let matchCount = 0;
-    
+
     galleryItems.forEach(item => {
       const itemCategory = item.getAttribute('data-category');
       const matchesFilter = (filterValue === 'all' || filterValue === itemCategory);
-      
+
       if (matchesFilter) {
         item.classList.remove('filtered-out');
         matchCount++;
-        
+
         if (!isGalleryExpanded && matchCount > limit) {
           item.classList.add('gallery-hidden');
         } else {
@@ -888,7 +888,7 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', () => {
       filterBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      
+
       // Reset expanded state to false when changing filters (good UX)
       isGalleryExpanded = false;
       updateGalleryVisibility();
@@ -899,7 +899,7 @@ document.addEventListener('DOMContentLoaded', () => {
     viewMoreBtn.addEventListener('click', () => {
       isGalleryExpanded = !isGalleryExpanded;
       updateGalleryVisibility();
-      
+
       // If collapsing, scroll back to gallery section start smoothly
       if (!isGalleryExpanded) {
         const gallerySection = document.getElementById('gallery');
@@ -933,7 +933,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const openLightbox = (index) => {
     // Active gallery items are those that are NOT filtered out AND NOT row hidden
-    activeGalleryItems = Array.from(galleryItems).filter(item => 
+    activeGalleryItems = Array.from(galleryItems).filter(item =>
       !item.classList.contains('filtered-out') && !item.classList.contains('gallery-hidden')
     );
     const selectedItem = galleryItems[index];
@@ -1494,12 +1494,12 @@ END:VEVENT\n`;
 
   function setLanguage(lang) {
     setCookie('lang', lang, 365);
-    
+
     const currentLangSpan = document.getElementById('currentLang');
     if (currentLangSpan) {
       currentLangSpan.textContent = lang.toUpperCase();
     }
-    
+
     document.documentElement.setAttribute('lang', lang);
 
     const elements = document.querySelectorAll('[data-translate]');
@@ -1572,19 +1572,19 @@ END:VEVENT\n`;
     link.addEventListener('click', (e) => {
       const href = link.getAttribute('href');
       if (href === '#' || href === '') return;
-      
+
       const targetElement = document.querySelector(href);
       if (targetElement) {
         e.preventDefault();
-        
+
         const headerHeight = document.querySelector('.navbar').offsetHeight;
         const targetOffset = targetElement.offsetTop - headerHeight;
-        
+
         window.scrollTo({
           top: targetOffset,
           behavior: 'smooth'
         });
-        
+
         if (burgerMenu && navLinks && navLinks.classList.contains('active')) {
           burgerMenu.classList.remove('active');
           navLinks.classList.remove('active');
@@ -1601,7 +1601,7 @@ END:VEVENT\n`;
       const item = btn.parentElement;
       const answer = item.querySelector('.faq-answer');
       const isActive = item.classList.contains('active');
-      
+
       // Close other FAQs for cleaner accordion presentation
       document.querySelectorAll('.faq-item.active').forEach(activeItem => {
         if (activeItem !== item) {
@@ -1612,7 +1612,7 @@ END:VEVENT\n`;
           activeItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
         }
       });
-      
+
       if (isActive) {
         item.classList.remove('active');
         answer.style.maxHeight = null;
@@ -1656,7 +1656,7 @@ END:VEVENT\n`;
 
   function initCookieConsent() {
     const savedConsent = localStorage.getItem(COOKIE_STORAGE_KEY);
-    
+
     if (!savedConsent) {
       setTimeout(() => {
         if (cookieBanner) cookieBanner.classList.add('active');
@@ -1700,7 +1700,7 @@ END:VEVENT\n`;
             const consent = JSON.parse(savedConsent);
             if (cookieOptAnalytics) cookieOptAnalytics.checked = !!consent.analytics;
             if (cookieOptMarketing) cookieOptMarketing.checked = !!consent.marketing;
-          } catch (e) {}
+          } catch (e) { }
         }
         if (cookieModal) cookieModal.classList.add('active');
       });
