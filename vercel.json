@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "functions": {
+    "api/calendar.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/calendar",
+      "dest": "/api/calendar.js"
+    },
+    {
+      "handle": "filesystem"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
