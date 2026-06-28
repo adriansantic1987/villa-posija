@@ -2,6 +2,28 @@ const { test, expect } = require('@playwright/test');
 
 test.describe('Villa Posija - Mobile Booking & UX Verification', () => {
   test.beforeEach(async ({ page }) => {
+    // Set playwright-testing flag in localStorage before loading page
+    await page.addInitScript(() => {
+      window.localStorage.setItem('playwright-testing', 'true');
+    });
+
+    // Intercept api/calendar requests to mock a stable calendar iCal feed
+    await page.route('**/api/calendar', route => {
+      route.fulfill({
+        status: 200,
+        contentType: 'text/calendar',
+        body: `BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Booking.com//NONSGML Booking.com Calendar//EN
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20260708
+DTEND;VALUE=DATE:20260715
+SUMMARY:Booked - Booking.com
+END:VEVENT
+END:VCALENDAR`
+      });
+    });
+
     // Navigate to the local server base URL
     await page.goto('/');
     // Accept cookie consent to prevent overlaps
