@@ -2,6 +2,27 @@
    VILLA POSIJA - COMPREHENSIVE INTERACTIVE SCRIPT & ICAL CALENDAR
    ========================================================================== */
 
+// Intercept and disable local live-reload WebSockets in production to prevent console errors
+if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+  const OriginalWebSocket = window.WebSocket;
+  if (OriginalWebSocket) {
+    window.WebSocket = function (url, protocols) {
+      if (typeof url === 'string' && (url.includes('127.0.0.1:5500') || url.includes('localhost:5500') || url.includes('/ws'))) {
+        console.log('Bypassing live-reload WebSocket connection in production:', url);
+        return {
+          readyState: 3, // CLOSED
+          close: () => {},
+          send: () => {},
+          addEventListener: () => {},
+          removeEventListener: () => {}
+        };
+      }
+      return new OriginalWebSocket(url, protocols);
+    };
+    window.WebSocket.prototype = OriginalWebSocket.prototype;
+  }
+}
+
 // --- Cookie Helper Functions ---
 function setCookie(name, value, days) {
   let expires = "";
