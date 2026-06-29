@@ -11,10 +11,10 @@ if (window.location.hostname !== 'localhost' && window.location.hostname !== '12
         console.log('Bypassing live-reload WebSocket connection in production:', url);
         return {
           readyState: 3, // CLOSED
-          close: () => {},
-          send: () => {},
-          addEventListener: () => {},
-          removeEventListener: () => {}
+          close: () => { },
+          send: () => { },
+          addEventListener: () => { },
+          removeEventListener: () => { }
         };
       }
       return new OriginalWebSocket(url, protocols);
@@ -48,7 +48,7 @@ function getCookie(name) {
 /// --- Translation Dictionary ---
 const translations = {
   en: {
-    "meta-title": "Villa Posija | Luxury Stone Villa in Kras, Krk Island",
+    "meta-title": "Villa Posija",
     nav_about: "About",
     nav_gallery: "Gallery",
     nav_contact: "Contact",
@@ -166,7 +166,7 @@ const translations = {
     cookie_always_active: "Always Active"
   },
   hr: {
-    "meta-title": "Villa Posija | Luksuzna kamena vila u Krasu, otok Krk",
+    "meta-title": "Villa Posija",
     nav_about: "O vili",
     nav_gallery: "Galerija",
     nav_contact: "Kontakt",
@@ -284,7 +284,7 @@ const translations = {
     cookie_always_active: "Uvijek aktivno"
   },
   de: {
-    "meta-title": "Villa Posija | Luxus-Steinvilla in Kras, Insel Krk",
+    "meta-title": "Villa Posija",
     nav_about: "Über uns",
     nav_gallery: "Galerie",
     nav_contact: "Kontakt",
@@ -402,7 +402,7 @@ const translations = {
     cookie_always_active: "Immer aktiv"
   },
   it: {
-    "meta-title": "Villa Posija | Villa di lusso in pietra a Kras, isola di Krk",
+    "meta-title": "Villa Posija",
     nav_about: "La villa",
     nav_gallery: "Galleria",
     nav_contact: "Contatto",
