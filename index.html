@@ -38,15 +38,14 @@
   <!-- Favicon -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      // Provjera jesi li na localhostu
       const isLocalhost = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
 
       if (!isLocalhost) {
-        // Ako je živa stranica na Vercelu, učitaj tvoju ada.ico ikonicu
         const link = document.createElement("link");
         link.rel = "icon";
         link.type = "image/x-icon";
-        link.href = "/ada.ico?v=ada_final_v1"; // Prisilno osvježavanje cachea
+        // Povlačimo ikonicu iz images mape uz novi cache-buster
+        link.href = "./images/ada.ico?v=images_mapa_v1";
         document.head.appendChild(link);
       }
     });
