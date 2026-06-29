@@ -36,7 +36,21 @@
   <meta property="og:image" content="./images/hero_villa.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/favicon.png?v=3">
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Check if the current site is running locally
+      const isLocalhost = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
+      
+      if (!isLocalhost) {
+        // Only inject the custom PNG favicon if we are live on Vercel
+        const link = document.createElement("link");
+        link.rel = "icon";
+        link.type = "image/png";
+        link.href = "/favicon.png?v=" + new Date().getTime(); // Fresh cache-buster
+        document.head.appendChild(link);
+      }
+    });
+  </script>
 
   <!-- FontAwesome v6 CDN for Modern Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
