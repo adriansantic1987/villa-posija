@@ -37,16 +37,16 @@
 
   <!-- Favicon -->
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      // Check if the current site is running locally
+    document.addEventListener("DOMContentLoaded", function () {
+      // Provjera jesi li na localhostu
       const isLocalhost = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
-      
+
       if (!isLocalhost) {
-        // Only inject the custom PNG favicon if we are live on Vercel
+        // Ako je živa stranica na Vercelu, ubaci favicon s novim cache-busterom
         const link = document.createElement("link");
         link.rel = "icon";
         link.type = "image/png";
-        link.href = "/favicon.png?v=" + new Date().getTime(); // Fresh cache-buster
+        link.href = "/favicon.png?v=ručni_pokušaj_v1";
         document.head.appendChild(link);
       }
     });
