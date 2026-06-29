@@ -48,7 +48,7 @@ function getCookie(name) {
 /// --- Translation Dictionary ---
 const translations = {
   en: {
-    "meta-title": "Villa Posija | Luxury Stone Villa in Kras, Krk Island",
+    "meta-title": "Villa Posija",
     nav_about: "About",
     nav_gallery: "Gallery",
     nav_contact: "Contact",
