@@ -42,11 +42,11 @@
       const isLocalhost = window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1";
 
       if (!isLocalhost) {
-        // Ako je živa stranica na Vercelu, ubaci favicon s novim cache-busterom
+        // Ako je živa stranica na Vercelu, učitaj tvoju ada.ico ikonicu
         const link = document.createElement("link");
         link.rel = "icon";
-        link.type = "image/png";
-        link.href = "/favicon.png?v=ručni_pokušaj_v1";
+        link.type = "image/x-icon";
+        link.href = "/ada.ico?v=ada_final_v1"; // Prisilno osvježavanje cachea
         document.head.appendChild(link);
       }
     });
