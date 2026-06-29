@@ -1,14 +1,13 @@
 {
   "version": 2,
-  "functions": {
-    "api/calendar.js": {
-      "runtime": "nodejs18.x"
-    }
-  },
   "routes": [
     {
       "src": "/api/calendar",
       "dest": "/api/calendar.js"
+    },
+    {
+      "src": "/ada.ico",
+      "dest": "/images/ada.ico"
     },
     {
       "handle": "filesystem"
